@@ -1,12 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-
+/* ----------- Partial imports ---------- */
 @import url('./partials/reset.css');
-@import url('./partials/vite-promo.css');
 @import url('./partials/about-hotel.css');
 @import url('./partials/about-restaurant.css');
 @import url('./partials/contacts.css');
@@ -28,18 +21,32 @@
 @import url('./partials/room-amenites.css');
 @import url('./partials/room-hero.css');
 
+/* ----------- Global styles ---------- */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --text-color: #7a7a7a;
+  --background-color: #fffdee;
+  --bg-darklemon-color: #f0ecd6;
+  --accent-color: #f3c653;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --footer-background: #0e0c07;
+  --title-color: #494848;
+  --pre-title-color: #b4b4b4;
+  --brown-color: #c79002;
+  --grey-color: #bababa;
+  --address-color: #e5e5e5;
+  --pre-footer-color: #828282;
+  --modal-text-color: #808080;
+  --social-icon-color: rgba(243, 198, 83, 0.7);
+  --room-gradient: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+}
+
+body {
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 1.25;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
