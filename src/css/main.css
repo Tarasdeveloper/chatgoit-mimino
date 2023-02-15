@@ -5,12 +5,32 @@
   |============================
 */
 
-@import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./partials/reset.css');
+@import url('./partials/vite-promo.css');
+@import url('./partials/about-hotel.css');
+@import url('./partials/about-restaurant.css');
+@import url('./partials/contacts.css');
+@import url('./partials/detailsof-hotel.css');
+@import url('./partials/detailsof-restaurant.css');
+@import url('./partials/footer.css');
+@import url('./partials/header.css');
+@import url('./partials/hotel-hero.css');
+@import url('./partials/hotel-lux-fortwo.css');
+@import url('./partials/hotel-room-forthree.css');
+@import url('./partials/hotel-room-fortwo.css');
+@import url('./partials/main-hero.css');
+@import url('./partials/modal-book-room.css');
+@import url('./partials/modal-book-table.css');
+@import url('./partials/modal-room-price.css');
+@import url('./partials/restaurant-about-kitchen.css');
+@import url('./partials/restaurant-hero.css');
+@import url('./partials/restaurant-menu.css');
+@import url('./partials/room-amenites.css');
+@import url('./partials/room-hero.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
 
