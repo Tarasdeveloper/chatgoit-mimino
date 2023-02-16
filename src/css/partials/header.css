@@ -1,22 +1,27 @@
 body {
     margin: 0;
 }
+
 .list {
     list-style: none;
     display: flex;
 }
+
 .link {
     text-decoration: none;
 }
+
 .header {
     position: absolute;
     width: 100%;
 }
+
 .header-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
+
 .header-logo {
     font-family: 'FilmP3', sans-serif;
     font-weight: 700;
@@ -24,6 +29,7 @@ body {
     color: var(--white-color);
     text-align: center;
 }
+
 .header-wrap {
     display: flex;
     align-items: center;
@@ -31,27 +37,33 @@ body {
 .header-nav {
     display: flex;
 }
+
 .header-menu {
     gap: 72px;
 }
+
 .header-item {
     display: flex;
     align-items: center;
     gap: 32px;
     height: 40px;
 }
+
 .header-nav-link-title {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+
 .header-tel {
     display: flex;
     align-items: center;
 }
+
 .header-tel-icon {
     fill: var(--accent-color);
 }
+
 .header-tel-numb {
     display: contents;
     font-weight: 400;
@@ -60,6 +72,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-color);
 }
+
 .header-address-wrap {
     width: 210px;
     padding-inline: 6px;
@@ -73,17 +86,21 @@ body {
     letter-spacing: 0.01em;
     color:  var(--address-color);
 }
+
 .header-address-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .header-address-icon {
     fill: var(--accent-color);
 }
+
 .header-soc-icon {
     fill: var(--social-icon-color);
 }
+
 @media screen and (max-width: 1023px) {
     /* mobile: верстка гумова, стає адаптивною на 414px; */
     .header {
