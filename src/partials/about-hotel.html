@@ -7,37 +7,97 @@
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <p class="about-hotel-text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
 
-    <ul class="about-hotel-list">
-      <li class="about-hotel-item">
-        <img
-          width="244"
-          height="322"
-          src="../images/img/hotel-room.jpg"
-          alt="bed_room"
+    <div class="about-hotel-img-wrap">
+      <picture>
+        <source
+          srcset="
+            ../images/about-hotel/hotel-room.jpg    1x,
+            ../images/about-hotel/hotel-room_2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
         />
-      </li>
-      <li class="about-hotel-item">
-        <img
-          width="200"
-          height="278"
-          src="../images/img/hotel_holl.jpg"
-          alt="hotel_holl"
+        <source
+          srcset="
+            ../images/about-hotel/hotel-room_tab.jpg 1x,
+            ../images/about-hotel/hotel-room_tab_2x 2x.jpg
+          "
+          media="(min-width: 1024px)"
         />
-      </li>
-    </ul>
+        <source
+          srcset="
+            ../images/about-hotel/hotel-room_mob.jpg 1x,
+            ../images/about-hotel/hotel-room_mob_2x 2x.jpg
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="../images/about-hotel/hotel-room.jpg" alt="bed_room" />
+      </picture>
+    </div>
+
+    <div class="about-hotel-img-text">
+      <p class="about-hotel-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <picture>
+        <source
+          srcset="
+            ../images/about-hotel/hotel_holl.jpg    1x,
+            ../images/about-hotel/hotel_holl_2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ../images/about-hotel/hotel_holl_tab.jpg    1x,
+            ../images/about-hotel/hotel_holl_tab_2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ../images/about-hotel/hotel_holl_mob.jpg    1x,
+            ../images/about-hotel/hotel_holl_mob_2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="../images/img/hotel_holl.jpg" alt="hotel_holl" />
+      </picture>
+    </div>
     <div class="about-hotel-slide">
-      <img
-        width="245"
-        height="245"
-        src="../images/img/hotel-registration.jpg"
-        alt="hotel_registration"
-      />
+      <div class="about-hotel-wrap">
+        <picture>
+          <source
+            srcset="
+              ../images/about-hotel/hotel-registration.jpg    1x,
+              ../images/about-hotel/hotel-registration_2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ../images/about-hotel/hotel-registration_tab.jpg    1x,
+              ../images/about-hotel/hotel-registration_tab_2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ../images/about-hotel/hotel-registration_mob.jpg    1x,
+              ../images/about-hotel/hotel-registration_mob_2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            width="245"
+            height="245"
+            src="../images/img/hotel-registration.jpg"
+            alt="hotel_registration"
+          />
+        </picture>
+      </div>
     </div>
     <div class="about-hotel-btn-wrap">
       <button class="about-hotel-btn btn">
