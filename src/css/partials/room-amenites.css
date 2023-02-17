@@ -1,0 +1,68 @@
+
+
+.room-amenites-containrs {
+ 
+}
+.amenites-title {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 1.15;
+color: #000000;
+}
+.amenites-text {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+color: #7A7A7A;
+}
+.amenites-wrap {
+}
+.amenites-list {
+}
+.amenites-subtitle {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 1.16;
+
+color: #000000;
+}
+.amenites-button {
+box-sizing: border-box;
+
+position: absolute;
+width: 384px;
+height: 64px;
+left: 15px;
+top: 1992px;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+
+color: #FFFFFF;
+
+background: #000000;
+/* Желтый основной */
+
+border: 1px solid #F3C653;
+border-radius: 25px;
+}
+.amenites-link {
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+
+letter-spacing: 0.02em;
+
+color: #C79002;
+
+}
+.amenites-arrow-icon {
+fill: #C79002;
+}
