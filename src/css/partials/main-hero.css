@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-main-hero{
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+} 
+
+.header-main-logo {
+  font-family: 'FilmP3', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.08;
+}
+
+.header-main-nav{
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.header-main-menu {
+  margin-left: 52px;
+  gap:20px;
+} 
+
+.header-main-item { 
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+} 
+
+.header-main-nav-link-title {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.header-main-tel-icon {
+  fill: var(--accent-color);
+}
+
+.header-main-tel-numb {
+  display: none;
+}
+
+.header-main-address {
+  width: 210px;
+  padding-inline: 6px;
+  padding-block: 7px;
+  border: 1px solid var(--social-icon-color);
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color:  var(--address-color);
+  margin-left: auto;
+}
+
+.header-main-address-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-main-address-icon {
+  fill: var(--accent-color);
+}
+
+.header-main-soc-list{
+  position: absolute;
+  top:700px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  margin: 0;
+}
+
+.header-main-soc-item{
+  width: 24px;
+  height: 24px;
+  fill: var(--social-icon-color);
+}
+
+.overlay-hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.65); 
+  background-image: url('../images/main-hero/hero-mob.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  padding: 70px 55px 20px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+    .overlay-hero {
+        background-image: url('../images/main-hero/hero-mob2@2x.jpg');
+         }
+}
+
+.hero{
+  padding-top: 58px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.hero-title{
+  font-family: 'FilmP3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--white-color); 
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero-title-title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-text{
+  font-family: 'TimesNewRoman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 113px;
+}
+
+.button-hero{
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn{
+  display: block; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 14px 24px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  margin-right: 40px;
+  margin-bottom: 24px; 
+  text-align: center;
+}
+
+.hero-second-btn{
+  display:block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 14px 24px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 58px; 
+  text-align:center;
+}
+
+@media screen and (min-width: 414px) {
+  .main-hero-container {
+    width: 100%;
+    min-width: 414px; 
+    margin: 0 auto;
+    padding: 0 15px;
+  } 
+
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .main-header-container {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  .header-main-logo {
+    font-size: 40px;
+    line-height: 1.07;
+    width: 127px;
+    height: 43px;
+  } 
+
+  .header-main-menu {
+    margin-left: 207px;
+    gap:72px;
+  } 
+
+  .header-main-nav-link-title {
+    font-size: 20px;
+    line-height:1.2;
+  }
+
+  .header-main-tel {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    padding: 7px;
+    gap: 4px;
+    border: 1px solid var(--social-icon-color);
+    border-radius: 2px;
+  } 
+
+  .header-main-tel-numb {
+    display: contents;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+  }
+
+  .header-main-address{
+    position: absolute;
+    top: 600px;
+    margin-bottom: 25px;
+  }
+
+  .header-main-soc-list{
+    bottom: 15px;
+  }
+
+  .overlay-hero {
+    background-color: rgba(0, 0, 0, 0.65); 
+    background-image: url('../images/main-hero/hero-tab.jpg'); 
+  }
+
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+    .overlay-hero {
+        background-image: url('../images/main-hero/hero-tab2@2x.jpg');
+         }
+  }
+
+  .hero{
+    padding-top: 88px;
+  }
+
+  .hero-title{
+    font-weight: 700;
+    font-size: 128px;
+    margin-bottom: 24px;
+  }
+
+  .hero-title-title{
+   font-size: 20px;
+   line-height: 1.2;
+   margin-bottom: 56px;
+  }  
+
+ .hero-text{
+   font-size: 36px;
+   line-height: 1.13;
+   margin-bottom: 145px;
+  }
+
+  .buttom-item{
+  display: flex;
+  margin-left: 137px;
+  }
+
+  .button-hero{
+   display: flex;
+   justify-content: center;
+  } 
+}
+
+ @media screen and (min-width: 1280px) {
+  .header-container {
+    width:100%;
+    max-width: 1140px;
+  }
+
+  .header-main-soc-list{
+    position: absolute;
+    top:30px;
+    left: 1000px;
+  }
+
+  .overlay-hero {
+    background-color: rgba(0, 0, 0, 0.65); 
+    background-image: url('../images/main-hero/hero-desk.jpg'); 
+  }
+
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+    .overlay-hero {
+        background-image: url('../images/main-hero/hero-tab2@2x.jpg');
+         }
+  }
+
+  .hero-title{
+    margin-bottom: 32px;
+  }
+
+  .hero-title-title{
+   margin-bottom: 64px;
+  }
+  .hero-text{
+    margin-bottom: 144px;
+  }
+ 
+}   
