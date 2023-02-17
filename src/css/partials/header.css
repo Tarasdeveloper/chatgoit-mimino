@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
 }
 
@@ -103,7 +103,7 @@ body {
 
 @media screen and (max-width: 1023px) {
     /* mobile: верстка гумова, стає адаптивною на 414px; */
-    .header {
+    /* .header {
         padding-block: 16px;
         background: var(--room-gradient);
     }
@@ -143,9 +143,9 @@ body {
     }
     .header-soc-list {
         display: none;
-    }
-}
-@media screen and (min-width: 414px) {
+    } */
+
+/* @media screen and (min-width: 414px) {
     .header-container {
         padding-inline: 15px;
         width: 414px;
@@ -154,7 +154,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
     /* tablet: 1024px; */
-    .header {
+    /* .header {
         padding-block: 30px;
     }
     .header-container {
@@ -185,9 +185,9 @@ body {
         display: none;
     }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) { */
     /* desktop: 1280px */
-    .header-container {
+    /* .header-container {
         padding-inline: 85px;
         width: 1280px;
     }
@@ -199,4 +199,4 @@ body {
         align-items: center;
         gap: 20px;
     }
-}
+}   */
