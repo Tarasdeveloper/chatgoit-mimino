@@ -13,7 +13,7 @@
 
 .about-rest-title {
   margin-bottom: 12px;
-  font-family: 'FilmP3';
+  font-family: 'FilmP3', sans-serif;
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
@@ -124,7 +124,6 @@
 
   .about-rest-text {
     margin-left: 48px;
-
     max-width: 312px;
     font-size: 16px;
   }
