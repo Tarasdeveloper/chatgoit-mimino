@@ -1,9 +1,12 @@
+ 
+ 
+ 
  @media screen and (max-width:1023px) {
   .overlay-hero {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.65);
-    background-image:url('/src/images/main-hero/hero-mob.jpg'); 
+    background-color: rgba(0, 0, 0, 0.65); 
+    background-image: url('../images/main-hero/hero-mob.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -16,7 +19,7 @@
 
   }
 .hero-title{
-    font-family: 'Film P3';
+    font-family: 'FilmP3';
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
@@ -40,7 +43,7 @@
 }
 
 .hero-text{
-  font-family: 'Times New Roman';
+  font-family: 'TimesNewRoman';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -111,7 +114,7 @@
 }
 
 }
-@media screen and (min-width:1024px) {
+/* @media screen and (min-width:1024px) {
   .overlay-hero {
     margin-left: auto;
     margin-right: auto;
@@ -129,7 +132,7 @@
   }
 
   .hero-title{
-    font-family: 'Film P3';
+    font-family: 'FilmP3';
     font-style: normal;
     font-weight: 700;
     font-size: 128px;
@@ -152,7 +155,7 @@
 }
 
 .hero-text{
-  font-family: 'Times New Roman';
+  font-family: 'TimesNewRoman';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -251,32 +254,9 @@
   height: 24px;
   fill: var(--social-icon-color);
 }
-
 }
 
-
-
-
-
-
-/* .hero-info{
-  display: flex;
-  align-items: flex-start;
- }  */
-
-
-
-
-
-  
-   /* .hero-info{
-    display: flex;
-    flex-wrap: wrap;
-    gap:24px
-   }  */
-  
-
-/* @media screen and(min-width:1280px) {
+ @media screen and(min-width:1280px) {
   .hero-title{
     margin-bottom: 32px;
   }
@@ -287,7 +267,6 @@
   .hero-text{
     margin-bottom: 144px;
   }
-
-  
-} */
+ 
+}  */
 
