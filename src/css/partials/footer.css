@@ -5,9 +5,7 @@
 
 .footer-box {
   display: flex;
-  flex-direction: row;
   padding-top: 40px;
-  padding-left: 44px;
   padding-bottom: 42px;
   padding-right: 18px;
   height: 240px;
@@ -60,10 +58,13 @@
   .footer-container {
     width: 414px;
   }
+  .footer-box {
+  padding-left: 44px;
+}
 }
 
 @media screen and (max-width: 1023px) {
-  .footer-button {
+  .footer-link {
     display: none;
   }
 }
@@ -95,12 +96,18 @@
     margin-right: 137px;
   }
 
-  .social-button {
+  .social-link {
     display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+
+    width: 144px;
+    height: 40px;
+       
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
 
     padding-left: 12px;
     padding-right: 11px;
@@ -125,6 +132,9 @@
     background: transparent;
     margin-left: auto;
     margin-right: 0;
+  }
+  .footer-social:not(:last-child) {
+   margin-bottom: 10px;
   }
 }
 
