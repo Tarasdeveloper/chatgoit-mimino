@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 414px) {
   .container {
     width: 384px;
@@ -11,15 +12,16 @@
 }
 
 .about-hotel-pre-title {
-  font-family: 'Times New Roman';
+  font-family: 'Times New Roman', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: #b4b4b4;
+  color: var(--pre-title-color);
   display: block;
   width: fit-content;
   margin-left: auto;
+  margin-bottom: 6px;
 }
 .about-hotel-title {
   font-family: 'FilmP3';
@@ -28,26 +30,20 @@
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: 0.3em;
-  color: #494848;
+  color: var(--title-color);
   display: block;
   width: fit-content;
   margin-left: auto;
+  margin-bottom: 16px;
 }
 .about-hotel-after-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  max-width: 242px;
 }
 .about-hotel-text {
-}
-.about-hotel-list {
-}
-.about-hotel-item {
-}
-.about-hotel-slide {
-}
-.about-hotel-btn-wrap {
-}
-.about-hotel-btn {
-}
-.btn {
-}
-.about-hotel-icon {
 }
