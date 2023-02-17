@@ -5,7 +5,6 @@
 
 .about-rest-pre {
   margin-bottom: 12px;
-
   font-family: 'Times New Roman', sans-serif;
   font-size: 20px;
   line-height: 1.15;
@@ -14,7 +13,6 @@
 
 .about-rest-title {
   margin-bottom: 12px;
-
   font-family: 'FilmP3';
   font-size: 40px;
   line-height: 1.07;
@@ -25,7 +23,6 @@
 .about-rest-after {
   margin-bottom: 28px;
   max-width: 258px;
-
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -36,7 +33,6 @@
 .about-rest-wrap {
   max-width: 244px;
   max-height: 322px;
-
   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -49,7 +45,6 @@
 .about-rest-text {
   margin-left: 20px;
   max-width: 163px;
-
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -61,14 +56,12 @@
   margin-top: 32px;
   margin-bottom: 32px;
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 }
 
 .about-rest-slider {
   margin-bottom: 20px;
-
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -77,7 +70,6 @@
 .about-rest-list {
   display: flex;
   gap: 32px;
-
   justify-content: flex-end;
 }
 
@@ -90,7 +82,6 @@
 @media screen and (min-width: 1024px) {
   .container {
     width: 960px;
-
     position: relative;
   }
 
@@ -117,7 +108,6 @@
   .about-rest-wrap {
     max-width: 400px;
     max-height: 524px;
-
     margin: 0;
   }
 
