@@ -1,13 +1,16 @@
 body {
     margin: 0;
 }
+
 .list {
     list-style: none;
     display: flex;
 }
+
 .link {
     text-decoration: none;
 }
+
 .header-hotel {
     position: relative;
     height: 740px;
@@ -18,6 +21,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .header-hotel-container {
     position: absolute;
     left: 50%;
@@ -31,6 +35,7 @@ body {
     padding-inline: 15px;
     gap: 12px;
 }
+
 .header-hotel-logo {
     font-family: 'FilmP3', sans-serif;
     font-weight: 700;
@@ -42,25 +47,30 @@ body {
     height: 39px;
     width: 114px;
 }
+
 .header-hotel-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
+
 .header-hotel-nav {
     display: flex;
     margin-bottom: 12px;
     justify-content: flex-end;
 }
+
 .header-hotel-menu {
     gap: 20px;
 }
+
 .header-hotel-item {
     display: flex;
     align-items: center;
     gap: 6px;
     height: 24px;
 }
+
 .header-hotel-nav-link-title {
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -68,16 +78,19 @@ body {
     font-size: 16px;
     line-height: calc(20/16);
 }
+
 .header-hotel-tel {
     display: flex;
     align-items: center;
     width: 20px;
     height: 24px;
 }
+
 .header-hotel-tel-icon {
     fill: var(--accent-color);
     overflow: visible;
 }
+
 .header-hotel-tel-numb {
     display: none; 
     font-weight: 400;
@@ -86,6 +99,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-color);
 }
+
 .header-hotel-address-wrap {
     width: 210px;
     padding-inline: 6px;
@@ -99,14 +113,17 @@ body {
     letter-spacing: 0.01em;
     color:  var(--address-color);
 }
+
 .header-hotel-address-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .header-hotel-address-icon {
     fill: var(--accent-color);
 }
+
 .header-hotel-soc-list {
     position: absolute;
     display: flex;
@@ -114,15 +131,18 @@ body {
     left: 15px;
     top: 680px;
 }
+
 .header-hotel-soc-icon {
     fill: var(--social-icon-color);
 }
+
 .hotel-hero-container {
     text-align: center;
     padding-inline: 15px;
     padding-top: 165px;
     margin: 0 auto;
 }
+
 .hotel-hero-title {
     font-family: 'FilmP3', sans-serif;
     font-weight: 700;
@@ -133,6 +153,7 @@ body {
     width: 245px;
     margin: 0 auto;
 }
+
 .hotel-hero-pretitle {
     font-weight: 600;
     font-size: 20px;
@@ -142,12 +163,14 @@ body {
     margin-top: 32px;
     margin-bottom: 178px;
 }
+
 .hotel-hero-btn-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
+
 .hotel-hero-btn {
     width: fit-content;
     padding: 12px 22px;
@@ -161,6 +184,7 @@ body {
     letter-spacing: 0.02em;
     color: #F3C653;
 }
+
 @media screen and (min-width: 414px) {
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -172,6 +196,7 @@ body {
             background-size: contain;
         }
     }
+
     .header-hotel-container {
         padding-inline: 15px;
         width: 414px;
@@ -179,14 +204,17 @@ body {
         flex-direction: row;
         align-items: flex-start;
     }
+
     .header-hotel-tel {
         width: 24px;
     }
+
     .hotel-hero-title {
         font-size: 96px;
         width: 303px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .header-hotel {
         padding-block: 30px;
@@ -195,6 +223,7 @@ body {
             linear-gradient(#000000a6, #000000a6), 
             url(../../images/hotel-hero/room-tab.webp);
     }
+
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -204,31 +233,38 @@ body {
             url(../../images/hotel-hero/room-tab@2x.webp);
         }
     }
+
     .header-hotel-container {
         padding-inline: 47px;
         width: 1024px;
         height: 40px;
         align-items: center;
     }
+
     .header-hotel-logo {
         font-size: 40px;
         line-height: calc(43/40);
         width: 127px;
         height: 43px;
     } 
+
     .header-hotel-menu {
         gap: 72px;
     }
+
     .header-hotel-item {
         gap: 32px;
     }
+
     .header-hotel-nav {
         margin-bottom: 0px;
     }
+
     .header-hotel-nav-link-title {
         font-size: 20px;
         line-height: calc(24/20);
     }
+
     .header-hotel-tel {
         padding: 7px;
         gap: 4px;
@@ -237,9 +273,11 @@ body {
         width: auto;
         height: auto;
     }
+
     .header-hotel-tel-numb {
         display: contents;
     }
+
     .header-hotel-address-wrap {
         width: auto;
         padding: 8px;
@@ -250,38 +288,46 @@ body {
         top: 570px;
         left: 47px;
     }
+
     .header-hotel-address-link {
         gap: 10px;
     }
+
     .header-hotel-soc-list {
         left: 47px;
         top: 651px;
     }
+
     .hotel-hero-container {
         padding-inline: 47px;
         padding-top: 151px;
         width: 1024px;
     }
+
     .hotel-hero-title {
         width: 404px;
         font-size: 128px;
         line-height: calc(138/128);
     }
+
     .hotel-hero-pretitle {
         margin-bottom: 226px;
     }
+
     .hotel-hero-btn-wrap {
         flex-direction: row;
         gap: 40px;
         justify-content: flex-end;
     }
 }
+
 @media screen and (min-width: 1280px) {
     .header-hotel {
         background-image:         
         linear-gradient(#000000a6, #000000a6), 
         url(../../images/hotel-hero/room-desk.webp);
     }
+
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -291,18 +337,22 @@ body {
             url(../../images/hotel-hero/room-desk@2x.webp);
         }
     }
+
     .header-hotel-container {
         padding-inline: 85px;
         width: 1280px;
     }
+
     .header-hotel-wrap {
         flex-direction: row;
         gap: 140px;
     }
+
     .header-hotel-address-wrap {
         top: 570px;
         left: 85px;
     }
+
     .header-hotel-soc-list {
         display: flex;
         align-items: center;
@@ -315,19 +365,23 @@ body {
         padding-top: 134px;
         width: 1280px;
     }
+
     .hotel-hero-title {
         width: 404px;
         font-size: 128px;
         line-height: calc(138/128);
     }
+
     .hotel-hero-pretitle {
         margin-bottom: 249px;
     }
+
     .hotel-hero-btn-wrap {
         flex-direction: row;
         gap: 40px;
         justify-content: flex-end;
     }
+    
     .hotel-hero-btn {
         padding-inline: 31px;
     }
