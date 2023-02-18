@@ -178,6 +178,7 @@ body {
 
 .hotel-hero-btn {
     width: fit-content;
+    min-width: 232px;
     padding: 12px 22px;
     background: #00000066;
     border: 2px solid var(--white-color);
@@ -395,6 +396,7 @@ body {
     }
     
     .hotel-hero-btn {
+        min-width: 254px;
         padding-inline: 31px;
     }
 }
