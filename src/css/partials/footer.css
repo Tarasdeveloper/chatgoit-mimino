@@ -35,7 +35,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
   color: var(--accent-color);
   transition: var(--transit);
 }
@@ -51,8 +50,7 @@
   fill: var(--accent-color);
   background: transparent;
   margin-left: auto;
-  cursor: pointer;
-}
+  }
 
 @media screen and (min-width: 414px) {
   .footer-container {
@@ -101,24 +99,17 @@
     align-items: center;
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: 0.02em;
-
     width: 144px;
     height: 40px;
-       
-    border: 0.5px solid #F3C653;
-    border-radius: 2px;
-
+     
     padding-left: 12px;
     padding-right: 11px;
     margin-right: 0;
-    width: 144px;
-    height: 40px;
-    cursor: pointer;
-
-    color: var(--accent-color);
-    border: 0.5px solid #f3c653;
+    
+    border: 0.5px solid;
     border-radius: 2px;
+    color: var(--accent-color);
+    transition: var(--transit);
   }
   .social-link {
     display: flex;
