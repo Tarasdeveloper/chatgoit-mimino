@@ -1,0 +1,258 @@
+.details-rest {
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  background-color: var(--background-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/detailsof-restaurant/background-img-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .details-rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/detailsof-restaurant/background-img-mob-2x.jpg);
+  }
+}
+
+.details-rest-pre {
+  margin-bottom: 12px;
+  margin-left: 125px;
+
+  font-family: 'FilmP3', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+}
+
+.detailst-rest-title {
+  margin-bottom: 12px;
+  margin-left: 125px;
+
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+
+.details-rest-after {
+  max-width: 259px;
+  margin-bottom: 48px;
+  margin-left: 125px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+}
+
+.wrap-img-rest {
+  max-width: 270px;
+  max-height: 270px;
+  margin-bottom: 16px;
+  margin-left: 25px;
+
+  
+  border-radius: 2px;
+}
+
+.details-rest-list {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  margin-left: 25px;
+}
+
+.details-rest-item {
+}
+
+.details-rest-arrow {
+}
+
+.details-rest-icon {
+  fill: var(--white-color);
+}
+
+.wrap-btn-rest {
+  text-align: center;
+}
+
+.details-rest-btn {
+  width: 236px;
+  height: 48px;
+  margin-bottom: 16px;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.wrap-link-rest {
+  width: 236px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+}
+
+.details-rest-link {
+  padding: 14px 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    max-width: 414x;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    position: relative;
+
+    max-width: 960px;
+  }
+
+  .details-rest {
+    padding-top: 48px;
+
+    background-color: var(--background-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/detailsof-restaurant/background-img-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .details-rest {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/detailsof-restaurant/background-img-tab-2x.jpg);
+    }
+  }
+
+  .details-rest-pre {
+    margin-bottom: 16px;
+    margin-left: 236px;
+
+    font-size: 64px;
+  }
+
+  .detailst-rest-title {
+    margin-bottom: 8px;
+    margin-left: 236px;
+
+    font-size: 24px;
+  }
+
+  .details-rest-after {
+    max-width: 610px;
+    margin-bottom: 40px;
+    margin-left: 236px;
+
+    font-size: 16px;
+  }
+
+  .wrap-img-rest {
+    margin-bottom: 24px;
+    margin-left: 265px;
+
+  }
+
+  .details-rest-list {
+    margin-left: 265px;
+  }
+
+  .wrap-btn-rest {
+    position: absolute;
+    bottom: 65px;
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .details-rest {
+    background-color: var(--background-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/detailsof-restaurant/background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .details-rest {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/detailsof-restaurant/background-img-2x.jpg);
+    }
+  }
+
+  .details-rest-pre {
+    margin-bottom: 16px;
+    margin-left: 253px;
+
+    font-size: 64px;
+  }
+
+  .detailst-rest-title {
+    margin-bottom: 8px;
+    margin-left: 253px;
+
+    font-size: 24px;
+  }
+
+  .details-rest-after {
+    max-width: 610px;
+    margin-bottom: 40px;
+    margin-left: 253px;
+
+    font-size: 16px;
+  }
+
+  .wrap-img-rest {
+    margin-bottom: 24px;
+    margin-left: 280px;
+
+  }
+
+  .details-rest-list {
+    margin-left: 280px;
+  }
+}
