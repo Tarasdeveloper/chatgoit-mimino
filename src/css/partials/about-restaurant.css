@@ -74,13 +74,13 @@
 }
 
 @media screen and (min-width: 414px) {
-  .container {
+  .about-rest > .container {
     width: 414px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
+  .about-rest > .container {
     width: 960px;
     position: relative;
   }
@@ -137,7 +137,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .about-rest > .container {
     width: 1140px;
   }
 
