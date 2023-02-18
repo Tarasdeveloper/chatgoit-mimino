@@ -20,6 +20,7 @@ body {
         url(../../images/hotel-hero/room-mob.webp);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .header-hotel-container {
@@ -46,6 +47,7 @@ body {
     line-height: calc(39/36);
     height: 39px;
     width: 114px;
+    text-transform: uppercase;
 }
 
 .header-hotel-wrap {
@@ -77,6 +79,7 @@ body {
     color: var(--accent-color);
     font-size: 16px;
     line-height: calc(20/16);
+    text-transform: capitalize;
 }
 
 .header-hotel-tel {
@@ -152,6 +155,7 @@ body {
     color: #FFFFFF;
     width: 245px;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 
 .hotel-hero-pretitle {
@@ -162,6 +166,7 @@ body {
     color: #FFFFFF;
     margin-top: 32px;
     margin-bottom: 178px;
+    text-transform: capitalize;
 }
 
 .hotel-hero-btn-wrap {
@@ -193,7 +198,6 @@ body {
             background-image: 
                 linear-gradient(#000000a6, #000000a6), 
                 url(../../images/hotel-hero/room-mob@2x.webp);
-            background-size: contain;
         }
     }
 
