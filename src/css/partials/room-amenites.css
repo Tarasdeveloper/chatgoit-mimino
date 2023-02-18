@@ -1,20 +1,21 @@
-.room-amenites-containrs {
-}
+.room-amenites-containes {
+  width: 100%;
+} 
+
 .amenites-title {
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 1.15;
-  color: #000000;
+  color: var(--black-color);
 }
 .amenites-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.02em;
-
-  color: #7a7a7a;
+  
+  color: var(--text-color);
 }
 .amenites-wrap {
 }
@@ -27,13 +28,11 @@
   font-size: 24px;
   line-height: 1.16;
 
-  color: #000000;
+  color: var(--black-color);
 }
 .amenites-button {
   box-sizing: border-box;
-
-  position: absolute;
-  width: 384px;
+  max-width: 384px;
   height: 64px;
   left: 15px;
   top: 1992px;
@@ -41,12 +40,12 @@
   font-size: 20px;
   line-height: 1.2;
 
-  color: #ffffff;
+  color: var(--white-color);
 
-  background: #000000;
-  /* Желтый основной */
-
-  border: 1px solid #f3c653;
+  background: var(--black-color);
+  
+  border: 1px solid;
+  border-color: var(--accent-color);
   border-radius: 25px;
 }
 .amenites-link {
@@ -55,10 +54,27 @@
   font-size: 16px;
   line-height: 1.25;
 
-  letter-spacing: 0.02em;
-
-  color: #c79002;
+  color: var(--brown-color);
 }
 .amenites-arrow-icon {
-  fill: #c79002;
+  fill: var(--brown-color);
+}
+
+@media screen and (min-width: 414px) {
+  .room-amenites-containrs {
+    width: 414px;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .room-amenites-containrs {
+    width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+   .room-amenites-containrs {
+    width: 1280px;
+  }
 }
