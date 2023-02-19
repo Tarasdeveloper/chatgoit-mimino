@@ -95,6 +95,11 @@
    .kitchen-top-wrapper {
       flex-direction: row;
       align-items: center;
+      margin-top: -32px;
+   }
+
+   .kitchen-top-img {
+      width: 400px;
    }
 }
 

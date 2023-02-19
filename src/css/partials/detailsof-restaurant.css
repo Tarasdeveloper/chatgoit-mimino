@@ -4,7 +4,7 @@
 
   background-color: var(--background-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/detailsof-restaurant/background-img-mob.jpg);
+    url(/images/detailsof-restaurant/background-img-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,7 +15,7 @@
   (min-resolution: 2dppx) {
   .details-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/detailsof-restaurant/background-img-mob-2x.jpg);
+      url(/images/detailsof-restaurant/background-img-mob-2x.jpg);
   }
 }
 
@@ -141,7 +141,7 @@
 
     background-color: var(--background-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/detailsof-restaurant/background-img-tab.jpg);
+      url(/images/detailsof-restaurant/background-img-tab.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -155,7 +155,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../images/detailsof-restaurant/background-img-tab-2x.jpg);
+        url(/images/detailsof-restaurant/background-img-tab-2x.jpg);
     }
   }
 
@@ -206,7 +206,7 @@
   .details-rest {
     background-color: var(--background-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/detailsof-restaurant/background-img.jpg);
+      url(/images/detailsof-restaurant/background-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -220,7 +220,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../images/detailsof-restaurant/background-img-2x.jpg);
+        url(/images/detailsof-restaurant/background-img-2x.jpg);
     }
   }
 
