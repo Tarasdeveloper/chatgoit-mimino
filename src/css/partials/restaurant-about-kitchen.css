@@ -7,8 +7,8 @@
    position: relative;
    display: flex;
    margin-bottom: 32px;
-   /* flex-wrap: wrap; */
-   /* flex-direction: column; */
+   flex-wrap: wrap;
+   flex-direction: column;
 }
 
 .kitchen-top-inner {
@@ -72,14 +72,31 @@
 
 @media (min-width: 414px) and (max-width: 514px) {
    .kitchen-top-wrapper {
-      flex-direction: column;
-      align-items: center;
       flex-wrap: wrap;
    }
 }
 
-@media (max-width: 515px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
+   .kitchen-pretitle {
+      font-size: 32px;
+      margin-bottom: 4px;
+   }
+
+   .kitchen-title {
+      font-size: 64px;
+      margin-bottom: 24px;
+   }
+
+   .kitchen-top-text {
+      font-size: 16px;
+      max-width: 440px;
+   }
+
    .kitchen-top-wrapper {
       flex-direction: row;
+      align-items: center;
    }
+}
+
+@media (min-width: 1280px) {
 }
