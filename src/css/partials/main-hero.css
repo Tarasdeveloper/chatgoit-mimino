@@ -272,14 +272,14 @@ body {
 
   .overlay-hero {
     background-color: rgba(0, 0, 0, 0.65); 
-    background-image: url('../images/main-hero/hero-tab.jpg'); 
+    background-image: var(--bg-gradient), url('/images/main-hero/hero-tab.jpg'); 
   }
 
 @media screen and (min-device-pixel-ratio: 2),
  screen and (min-resolution: 192dpi),
  screen and (min-resolution: 2dppx) {
     .overlay-hero {
-        background-image: url('../images/main-hero/hero-tab2@2x.jpg');
+        background-image: url('/images/main-hero/hero-tab2@2x.jpg');
          }
   }
 
@@ -330,14 +330,14 @@ body {
 
   .overlay-hero {
     background-color: rgba(0, 0, 0, 0.65); 
-    background-image: url('../images/main-hero/hero-desk.jpg'); 
+    background-image: url('/images/main-hero/hero-desk.jpg'); 
   }
 
 @media screen and (min-device-pixel-ratio: 2),
  screen and (min-resolution: 192dpi),
  screen and (min-resolution: 2dppx) {
     .overlay-hero {
-        background-image: url('../images/main-hero/hero-tab2@2x.jpg');
+        background-image: url('/images/main-hero/hero-tab2@2x.jpg');
          }
   }
 

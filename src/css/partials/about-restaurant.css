@@ -5,7 +5,7 @@
 
 .about-rest-pre {
   margin-bottom: 12px;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 20px;
   line-height: 1.15;
   color: var(--pre-title-color);
@@ -13,11 +13,7 @@
 
 .about-rest-title {
   margin-bottom: 12px;
-<<<<<<< Updated upstream
   font-family: 'FilmP3', sans-serif;
-=======
-  font-family: 'FilmP3';
->>>>>>> Stashed changes
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
@@ -64,12 +60,23 @@
   justify-content: space-between;
 }
 
-.about-rest-slider {
+/* .about-rest-slider {
   margin-bottom: 20px;
   display: flex;
   gap: 25px;
   justify-content: center;
+} */
+
+.swiper {
+  width: 245px;
+  margin-bottom: 20px;
 }
+
+/* .swiper-slide-img {
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+} */
 
 .about-rest-list {
   display: flex;
@@ -77,9 +84,31 @@
   justify-content: flex-end;
 }
 
+.about-rest-icon {
+  transition: fill var(--transit);
+}
+
+.about-rest-icon:hover,
+.about-rest-icon:focus {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 414px) {
   .container {
+    position: relative;
     width: 414px;
+  }
+
+  .swiper {
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+
+    width: 330px;
+  }
+
+  .about-rest-thumb {
+    margin-bottom: 297px;
   }
 }
 
@@ -118,7 +147,8 @@
   .about-rest-wrap.about-rest-img {
     position: absolute;
     top: -153px;
-    left: 519px;
+    /* left: 519px; */
+    right: 70px;
   }
 
   .about-rest-thumb {
@@ -132,12 +162,19 @@
     font-size: 16px;
   }
 
-  .about-rest-slider {
-    position: absolute;
-    top: 828px;
-    left: 515px;
-    gap: 40px;
+  .swiper {
+    width: 428px;
+
+    bottom: 50px;
+    right: 15px;
   }
+
+  /* .about-rest-slider {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    gap: 40px;
+  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -151,7 +188,7 @@
   }
 
   .about-rest-wrap.about-rest-img {
-    left: 555px;
+    right: 110px;
   }
 
   .about-rest-wrap {
@@ -167,8 +204,12 @@
     margin-left: 32px;
   }
 
-  .about-rest-slider {
-    top: 783px;
-    left: 575px;
+  .swiper {
+    width: 548px;
   }
+
+  /* .about-rest-slider {
+    bottom: 60px;
+    right: 15px;
+  } */
 }
