@@ -5,7 +5,7 @@
 
 .about-rest-pre {
   margin-bottom: 12px;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 20px;
   line-height: 1.15;
   color: var(--pre-title-color);
@@ -13,7 +13,7 @@
 
 .about-rest-title {
   margin-bottom: 12px;
-  font-family: 'FilmP3';
+  font-family: 'FilmP3', sans-serif;
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
@@ -73,15 +73,24 @@
   justify-content: flex-end;
 }
 
+.about-rest-icon {
+  transition: fill var(--transit);
+}
+
+.about-rest-icon:hover,
+.about-rest-icon:focus {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 414px) {
   .about-rest > .container {
-    width: 414px;
+    max-width: 414px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .about-rest > .container {
-    width: 960px;
+    max-width: 960px;
     position: relative;
   }
 
@@ -114,7 +123,8 @@
   .about-rest-wrap.about-rest-img {
     position: absolute;
     top: -153px;
-    left: 519px;
+    /* left: 519px; */
+    right: 70px;
   }
 
   .about-rest-thumb {
@@ -130,15 +140,15 @@
 
   .about-rest-slider {
     position: absolute;
-    top: 828px;
-    left: 515px;
+    bottom: 60px;
+    right: 15px;
     gap: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-rest > .container {
-    width: 1140px;
+    max-width: 1140px;
   }
 
   .about-rest-after {
@@ -147,7 +157,7 @@
   }
 
   .about-rest-wrap.about-rest-img {
-    left: 555px;
+    right: 110px;
   }
 
   .about-rest-wrap {
@@ -164,7 +174,7 @@
   }
 
   .about-rest-slider {
-    top: 783px;
-    left: 575px;
+    bottom: 60px;
+    right: 15px;
   }
 }
