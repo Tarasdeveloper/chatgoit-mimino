@@ -96,8 +96,11 @@
 /* -----------------MEDIA---------------- */
 
 @media screen and (min-width: 414px) {
+
   .about-hotel > .container {
     width: 414px;
+
+  .container {
     margin-left: auto;
     margin-right: auto;
   }
