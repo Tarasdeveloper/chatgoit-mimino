@@ -67,9 +67,15 @@
    max-width: 163px;
 }
 
-.kitchen > .swiper {
+.kitchen .swiper {
    width: 414px;
    height: 245px;
+}
+
+.kitchen .swiper-slide {
+   background-color: var(--bg-img-color);
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   border-radius: 2px;
 }
 
 @media (min-width: 414px) {
