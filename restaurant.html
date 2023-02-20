@@ -11,14 +11,18 @@
     <title>Мiмiнo | Ресторан</title>
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/chatgoit-mimino/assets/about-rest-swiper-90576b9e.js"></script>
-    <link rel="stylesheet" href="/chatgoit-mimino/assets/about-rest-swiper-3e2c1439.css">
+    <script type="module" crossorigin src="/chatgoit-mimino/assets/modal-window-e2d92267.js"></script>
+    <link rel="stylesheet" href="/chatgoit-mimino/assets/modal-window-2420bb45.css">
   </head>
   <body>
    <header class="header-rest">
@@ -168,15 +172,16 @@
          </div>
          
          <img class="kitchen-top-img"
-            srcset="/chatgoit-mimino/assets/kitchen-mob-img-b7fc5edf.jpg 244w, /chatgoit-mimino/assets/kitchen-mob-imgx2-60ff719b.jpg 2x 244w, /chatgoit-mimino/assets/kitchen-tab-img-13d3417a.jpg 400w, /chatgoit-mimino/assets/kitchen-tab-imgx2-0a2d6925.jpg 400w"
-            sizes="(min-width: 1024px) 400px, 244px"
+            srcset="/chatgoit-mimino/assets/kitchen-mob-img-b7fc5edf.jpg 244w, /chatgoit-mimino/assets/kitchen-mob-imgx2-60ff719b.jpg 2x 244w, /chatgoit-mimino/assets/kitchen-tab-img-13d3417a.jpg 400w, /chatgoit-mimino/assets/kitchen-tab-imgx2-0a2d6925.jpg 2x 400w, /chatgoit-mimino/assets/kitchen-dt-img-e0bf7016.jpg 460w, /chatgoit-mimino/assets/kitchen-dt-img-e0bf7016.jpg 2x 460w"
+            sizes="(min-width: 1280px) 460px, (min-width: 1024px) 400px, 244px"
             src="/chatgoit-mimino/assets/kitchen-mob-img-b7fc5edf.jpg"
             alt="kitchen image"
          />
       </div>
       <div class="kitchen-bottom-wrapper">
          <img class="kitchen-bottom-img"
-            srcset="/chatgoit-mimino/assets/meet-mob-img-dd668e34.jpg , /chatgoit-mimino/assets/meet-mob-imgx2-9160b8b5.jpg 2x"
+            srcset="/chatgoit-mimino/assets/meet-mob-img-dd668e34.jpg 244w, /chatgoit-mimino/assets/meet-mob-imgx2-9160b8b5.jpg 2x 244w, /chatgoit-mimino/assets/meet-tab-img-ce406758.jpg 400w, /chatgoit-mimino/assets/meet-tab-imgx2-1f782b65.jpg 2x 400w, /chatgoit-mimino/assets/meet-dt-img-740e1e1d.jpg 460w, /chatgoit-mimino/assets/meet-dt-img-740e1e1d.jpg 2x 460w"
+            sizes="(min-width: 1280px) 460px, (min-width: 1024px) 350px, 200px"
             src="/chatgoit-mimino/assets/meet-mob-img-dd668e34.jpg"
             alt="cooking image">
 
@@ -186,8 +191,34 @@
 
       </div>
       <div class="kitchen-slider">
-         <img src="/chatgoit-mimino/assets/slider-mob-img-1-8177be6c.jpg" alt="img-1">
-         <img src="/chatgoit-mimino/assets/slider-mob-img-1-8177be6c.jpg" alt="img-1">
+         <!-- Slider main container -->
+         <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+               <div class="swiper-slide">
+                  <img src="/chatgoit-mimino/assets/slider-dt-img-1-bbe48b9a.jpg" alt="img-1">
+               </div>
+
+               <div class="swiper-slide">
+                  <img src="/chatgoit-mimino/assets/slider-dt-img-2-34521174.jpg" alt="img-2">
+               </div>
+
+            </div>
+            <!--  Navigation buttons -->
+            <div class="swiper-button-prev">
+               <svg class="header-burger-svg" width="32" height="22">
+                  <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-arrow-left"></use>
+               </svg>
+            </div>
+            <div class="swiper-button-next">
+               <svg class="header-burger-svg" width="32" height="22">
+                  <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-arrow-right"></use>
+               </svg>
+            </div>
+
+         </div>
+ 
       </div>
 
    </div>
@@ -302,7 +333,8 @@
 
 
    </footer>
-
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    
   </body>
 </html>
