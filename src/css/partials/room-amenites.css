@@ -1,19 +1,21 @@
 .room-amenites-containes {
   width: 100%;
-} 
+ } 
 
 .amenites-title {
   font-family: 'Times New Roman';
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 1.15;
+  padding-top: 32px;
+  margin-bottom: 16px;
   color: var(--black-color);
 }
 .amenites-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
+  margin-top: 16px;
   
   color: var(--text-color);
 }
@@ -23,22 +25,30 @@
 }
 .amenites-subtitle {
   font-family: 'Times New Roman';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
+  margin-top: 32px;
 
   color: var(--black-color);
 }
 .amenites-button {
-  box-sizing: border-box;
-  max-width: 384px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  width: 384px;
   height: 64px;
-  left: 15px;
-  top: 1992px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  
+  margin-top: 32px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 43px;
+  padding-bottom: 20px;
+  padding-left: 43px;
 
   color: var(--white-color);
 
@@ -53,7 +63,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-
+    
   color: var(--brown-color);
 }
 .amenites-arrow-icon {
