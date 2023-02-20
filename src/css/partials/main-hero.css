@@ -2,49 +2,46 @@ body {
   margin: 0;
 }
 
-.list {
-  list-style: none;
+ .list {
   display: flex;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.header-main-hero{
-  position: absolute;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  padding-top: 16px;
 } 
 
+.header-main-hero{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;  
+  background: linear-gradient(#000000a6, #000000a6), url('../images/main-hero/hero-mob.jpg');  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+} 
+
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+    .overlay-hero {
+      background: linear-gradient(#000000a6, #000000a6), url('../images/main-hero/hero-mob2@2x.jpg');
+         }
+}
+
+.header-main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 10px;
+} 
 .header-main-logo {
   font-family: 'FilmP3', sans-serif;
   font-weight: 700;
   letter-spacing: 0.3em;
   color: var(--white-color);
   text-align: center;
-  font-size: 36px;
-  line-height: 1.08;
+  font-size: 25px;
 }
-
-.header-main-nav{
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.header-main-menu {
-  margin-left: 52px;
-  gap:20px;
-} 
 
 .header-main-item { 
   display: flex;
   align-items: center;
-  gap: 6px;
-  height: 24px;
 } 
 
 .header-main-nav-link-title {
@@ -75,6 +72,7 @@ body {
   letter-spacing: 0.01em;
   color:  var(--address-color);
   margin-left: auto;
+  margin-right: 15px;
 }
 
 .header-main-address-link {
@@ -89,7 +87,6 @@ body {
 
 .header-main-soc-list{
   position: absolute;
-  top:700px;
   bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -105,25 +102,6 @@ body {
   fill: var(--social-icon-color);
 }
 
-.overlay-hero {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.65); 
-  background-image: url('../images/main-hero/hero-mob.jpg'); 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-  padding: 70px 55px 20px;
-}
-
-@media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2dppx) {
-    .overlay-hero {
-        background-image: url('../images/main-hero/hero-mob2@2x.jpg');
-         }
-}
-
 .hero{
   padding-top: 58px;
   padding-bottom: 20px;
@@ -133,8 +111,9 @@ body {
 .hero-title{
   font-family: 'FilmP3';
   font-style: normal;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 76px;
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: var(--white-color); 
@@ -180,15 +159,20 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding: 14px 24px;
-  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 18px;
   border: 2px solid #FFFFFF;
   border-radius: 25px;
-  margin-right: 40px;
   margin-bottom: 24px; 
-  text-align: center;
+  text-align: center;width: 236px;
+  width: 236px;
+  height: 48px;
 }
-
+.hero-btn:hover,
+.hero-btn:focus{
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 .hero-second-btn{
   display:block;
   font-family: 'Montserrat';
@@ -198,32 +182,70 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding: 14px 24px;
+  padding: 12px 18px;
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #FFFFFF;
   border-radius: 25px;
   cursor: pointer;
   margin-bottom: 58px; 
   text-align:center;
+  width: 236px;
+  height: 48px;
+}
+.hero-second-btn:hover,
+.hero-second-btn:focus{
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
-@media screen and (min-width: 414px) {
+ @media screen and (min-width: 414px) {
   .main-hero-container {
     width: 100%;
     min-width: 414px; 
     margin: 0 auto;
     padding: 0 15px;
   } 
+  .header-main-logo {
+    font-size: 36px;
+    line-height: 1.08; 
+  }
+  .header-main-nav{
+    justify-content: space-between;
+  }
+  .header-main-menu {
+    margin-left: 52px; 
+     gap:20px;  
+     gap:0; 
+  } 
 
-}
+  .header-main-item { 
+     gap: 6px;
+  }
+  }
 
-@media screen and (min-width: 1024px) {
+
+ @media screen and (min-width: 1024px) {
   
   .main-header-container {
     width: 100%;
     max-width: 1024px;
   }
-
+  .header-main-hero{
+    background: linear-gradient(#000000a6, #000000a6), url('../images/main-hero/hero-tab.jpg');  
+ 
+  } 
+  
+  @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .overlay-hero {
+        background: linear-gradient(#000000a6, #000000a6), url('../images/main-hero/hero-tab2@2x.jpg');
+           }
+  }
+  .header-main-nav{
+    padding-top: 30px;
+}
   .header-main-logo {
     font-size: 40px;
     line-height: 1.07;
@@ -244,7 +266,6 @@ body {
   .header-main-tel {
     display: flex;
     align-items: center;
-    height: 24px;
     padding: 7px;
     gap: 4px;
     border: 1px solid var(--social-icon-color);
@@ -259,15 +280,21 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-color);
   }
-
+  .header-main-address {
+    width: 285px;
+    font-size: 16px; 
+    padding-inline: 10px;
+    padding-block: 8px;
+  }
   .header-main-address{
     position: absolute;
-    top: 600px;
-    margin-bottom: 25px;
+    bottom: 75px;
+    left: 75px;
   }
 
   .header-main-soc-list{
     bottom: 15px;
+    left:75px;
   }
 
   .overlay-hero {
@@ -307,13 +334,19 @@ body {
 
   .buttom-item{
   display: flex;
-  margin-left: 137px;
   }
 
   .button-hero{
+   min-width: 1024px;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
+   padding:0 85px;
   } 
+  .hero-btn{
+  margin-right: 40px; 
+  margin-bottom: 0;
+  height: 48px;
+  }
 }
 
  @media screen and (min-width: 1280px) {
@@ -321,11 +354,18 @@ body {
     width:100%;
     max-width: 1140px;
   }
+  .header-main-nav{
+    justify-content:start;
+  }
 
+   .header-main-item{
+    gap:32px
+   }
+   
   .header-main-soc-list{
     position: absolute;
-    top:30px;
-    left: 1000px;
+    top:40px;
+    left: 1010px;
   }
 
   .overlay-hero {
@@ -351,5 +391,15 @@ body {
   .hero-text{
     margin-bottom: 144px;
   }
- 
-}   
+
+  .hero-btn{
+    font-size: 15px;
+    padding: 14px 35px;
+    width: 258px;
+  }
+  
+  .hero-second-btn{
+    padding: 14px 35px;
+    width: 258px;
+  }
+}     
