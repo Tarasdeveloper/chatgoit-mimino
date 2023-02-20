@@ -4,10 +4,10 @@ const swiper = new Swiper('.swiper', {
  
    // Navigation arrows
    navigation: {
-     nextEl: '.swiper-button-next',
-     prevEl: '.swiper-button-prev',
+     nextEl: '.kitchen-button-left',
+     prevEl: '.kitchen-button-right'
    },
-
+   
    breakpoints: {
       320: {
         slidesPerView: 1.3,

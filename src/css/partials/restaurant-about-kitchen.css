@@ -1,6 +1,7 @@
 .kitchen {
    padding: 15px 0 20px;
    background-color: var(--background-color);
+   position: relative;
 }
 
 .kitchen-top-wrapper {
@@ -69,13 +70,26 @@
 
 .kitchen .swiper {
    width: 414px;
-   height: 245px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
 }
 
 .kitchen .swiper-slide {
    background-color: var(--bg-img-color);
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
+   cursor: grab;
+}
+
+.kitchen-button-list {
+   display: flex;
+   cursor: pointer;
+   justify-content: flex-end;
+}
+
+.kitchen-button-left {
+   margin-right: 32px;
 }
 
 @media (min-width: 414px) {
@@ -86,6 +100,10 @@
    .kitchen-top-wrapper {
       flex-wrap: wrap;
    }
+
+   /* .kitchen .swiper {
+      position: relative;
+   } */
 }
 
 @media (min-width: 1024px) {
