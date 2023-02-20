@@ -365,7 +365,6 @@ body {
     background: var(--accent-color);
     color: #000000; 
 }
-
 /* ---------------------------- MEDIA HOTEL ---------------------------- */
 @media screen and (min-width: 414px) {
     @media (min-device-pixel-ratio: 2),
