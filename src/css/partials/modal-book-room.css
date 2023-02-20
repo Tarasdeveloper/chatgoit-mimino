@@ -211,6 +211,10 @@
         font-size: 24px;
         line-height: calc(28/24);
     }
+    .book-room-contact-form-input-txt {
+        font-size: 16px;
+        line-height: calc(20/16);
+    }
     .book-room-select-field {
         width: 288px;
         height: 64px;
@@ -226,7 +230,7 @@
         margin-bottom: 28px;
     }
     .book-room-select-wrap > .book-room-contact-form-input-txt {
-        padding-right: 140px;
+        padding-right: 120px;
     }
     .book-room-contact-form-btn-wrap {
         margin-top: 40px;
