@@ -1,19 +1,46 @@
-<div class="modal-table">
-    <button type="button" class="modal-table-close-btn"></button>
-    <form class="modal-table-form">
-        <p>ЗАБРОНЮВАТИ СТОЛИК</p>
-        <label class="modal-table-form-file"></label>
-        <input type="text" name="user_name" class="modal-table-form-input" placeholder="Ваше ім'я">
-        <span class="">На кого забронювати столик?</span>
-        <label class="modal-table-form-file"></label>
-        <input type="number" name="user_namber" class="modal-table-form-input" placeholder="2">
-        <span class="">Столик на яку кількість осіб?</span>
-        <label class="modal-table-form-file"></label>
-        <input type="tel" name="user_phone" class="modal-table-form-input" placeholder="+38(_ _ _) _ _ _ - _ _ - _ _">
-        <span class="">Номер телефону</span>
-        <label class="modal-table-form-file"></label>
-        <input type="text" name="user_date" class="modal-table-form-input" placeholder="Сьогодні">
-        <span class="">На яку дату бронювати?</span>
+<div class="backdrop-table is-hidden" data-modal>
+  <div class="modal-table">
+    <button type="button" class="modal-table-close-btn" data-modal-close>
+      <svg class="modal-table-close-btn-icon" width="24" height="24">
+        <use href="../images/icon.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <form action="" class="modal-table-form">
+      <h3 class="modal-table-title">Забронювати столик</h3>
+      <div class="modal-table-form_wrap">
+        <div class="modal-table-form__field">
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            placeholder="Ваше ім’я"
+          />
+          <label for="firstName" class="label">На кого забронювати номер</label>
+        </div>
+        <div class="modal-table-form__field">
+          <input id="phone" type="text" placeholder="+38 (___) ___-__-__" />
+          <label for="phone" class="label">Номер телефону</label>
+        </div>
+        <div class="modal-table-form__field select">
+          <select name="entryData" id="entryData">
+            <option value="0">Сьогодні</option>
+            <option value="1">Завтра</option>
+          </select>
+          <label for="entryData" class="label">Дата заїзду</label>
+        </div>
+        <div class="modal-table-form__field select">
+          <select name="outDate" id="outDate">
+            <option value="0">Сьогодні</option>
+            <option value="1">Завтра</option>
+          </select>
+          <label for="outDate" class="label"> Дата виїзду </label>
+        </div>
+        <div class="button-wrap">
+          <button type="submit" class="action confirm">
+            Оформити бронювання
+          </button>
+        </div>
+      </div>
     </form>
-    <button type="submit" class="modal-table-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+  </div>
 </div>
