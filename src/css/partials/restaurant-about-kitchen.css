@@ -67,6 +67,11 @@
    max-width: 163px;
 }
 
+.kitchen > .swiper {
+   width: 414px;
+   height: 245px;
+}
+
 @media (min-width: 414px) {
    .kitchen > .container {
       max-width: 514px;
