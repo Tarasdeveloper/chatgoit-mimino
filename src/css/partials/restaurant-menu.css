@@ -1,13 +1,86 @@
-.restaurant-title {
-
+.menu-category {
+    margin-left: 15px;
+    max-width: 414px;
 }
 
-.restaurant-list {
+.menu-category h1 {
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 37px;
+color: #000000;
+margin-right: 81px;
+margin-bottom: 32px;
 }
 
-.restaurant-item {
-    flex-wrap: wrap;
+.menu-category h2 {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+margin-bottom: 16px;
+max-width: 220px;
 }
 
-.restaurant-wrap {
+/* Menu item styles */
+.menu-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dish {
+    max-width: 225px;
+	flex: 1;
+}
+
+.dish h3 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #000000;
+margin-bottom: 4px;
+}
+
+.dish p {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 0.02em;
+color: #000000;
+margin-bottom: 8px;
+}
+
+.dish-details {
+	display: flex;
+	align-items: center;
+    gap: 32px;
+}
+
+.price {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #000000;
+}
+
+.weight {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #000000;
 }
