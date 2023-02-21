@@ -50,7 +50,6 @@
 .kitchen-bottom-wrapper {
    display: flex;
    margin-bottom: 22px;
-   flex-wrap: wrap;
    align-items: center;
 }
 
