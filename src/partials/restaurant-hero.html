@@ -65,60 +65,7 @@
     <h2 class="rest-hero-pretitle">ресторан</h2>
     <p class="rest-hero-txt">смак життя 24/7</p>
     <div class="rest-hero-btn-wrap">
-        <button class="rest-hero-btn" type="button" modal-open>Забронювати столик</button>
-        <button class="rest-hero-btn" type="button" modal-open>Переглянути меню</button>
-    </div>
-</div>
-<div class="book-desk-backdrop is-hidden" data-modal>
-    <div class="book-desk-modal">
-        <button type="button" class="book-desk-modal-close-btn" modal-close>
-            <svg class="book-desk-modal-close-btn-icon">
-                <use href="/images/icon.svg#icon-cross"></use>
-            </svg>
-        </button>
-        <p class="book-desk-modal-txt">забронювати столик</p>
-        <form class="book-desk-contact-form">
-            <label class="book-desk-contact-form-field">
-                <input 
-                    type="text" 
-                    class="book-desk-contact-form-input" 
-                    placeholder="Ваше ім’я" 
-                    name="user_name" 
-                    required
-                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$">
-                <span class="book-desk-contact-form-input-txt">На кого забронювати номер?</span>
-            </label>
-            <label class="book-desk-contact-form-field">
-                <input 
-                    type="tel" 
-                    class="book-desk-contact-form-input" 
-                    placeholder="+38 (___) ___-__-__" 
-                    name="user_phone" 
-                    required
-                    pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="xxx-xxx-xx-xx">
-                <span class="book-desk-contact-form-input-txt">Номер телефону</span>
-            </label>
-            <div class="book-desk-select-wrap">
-                <select class="book-desk-select-field" name="room_category">
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-                <span class="book-desk-contact-form-input-txt">Столик на яку кількість осіб?</span>
-            </div>
-            <label class="book-desk-contact-form-field">
-                <input 
-                    type="date" 
-                    class="book-desk-contact-form-input date-picker"
-                    name="check-in-date" 
-                    placeholder="Сьогодні"
-                    required>
-                    <span class="book-desk-date-form-input-txt">На яку дату бронювати?</span>
-            </label>
-        </form>
-        <div class="book-desk-contact-form-btn-wrap">
-            <button type="submit" class="book-desk-contact-form-btn">оформити бронювання</button>
-        </div>
+        <a href="#" class="rest-hero-btn btn js-open-modal" data-modal="1">Забронювати столик</a>
+        <a href="#" class="rest-hero-btn btn js-open-modal" data-modal="3">Переглянути ціни</a>
     </div>
 </div>
