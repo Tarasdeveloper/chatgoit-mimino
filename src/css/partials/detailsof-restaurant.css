@@ -15,7 +15,7 @@
   (min-resolution: 2dppx) {
   .details-rest {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/images/detailsof-restaurant/background-img-mob-2x.jpg);
+      url(/images/detailsof-restaurant/background-img-mob_2x.jpg);
   }
 }
 
@@ -186,7 +186,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(/images/detailsof-restaurant/background-img-tab-2x.jpg);
+        url(/images/detailsof-restaurant/background-img-tab_2x.jpg);
     }
   }
 
@@ -260,7 +260,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(/images/detailsof-restaurant/background-img-2x.jpg);
+        url(/images/detailsof-restaurant/background-img_2x.jpg);
     }
   }
 
