@@ -1,5 +1,4 @@
 .menu-category {
-    margin-left: 15px;
 }
 
 .menu-category h1 {
@@ -101,7 +100,8 @@ color: var(--black-color);
 background: var(--black-color);
 border: 2px solid var(--accent-color);
 border-radius: 25px;
-width: 236px;
+width: fit-content;
+min-width: 236px;
 height: 48px;
 box-sizing: border-box;
 font-family: 'Montserrat';
@@ -123,13 +123,11 @@ border-radius: 25px;
 
 @media screen and (min-width: 414px) {
 	.menu-category {
-	  width: 414px;
 	}
   }
   
   @media screen and (min-width: 1024px) {
 	.menu-category {
-	  width: 1024px;
 	  padding: 0;
 	  display: flex;
 	  align-items: center;
@@ -144,14 +142,14 @@ border-radius: 25px;
 		margin-top: 58px;
 	}
 
-	.all-dish {
+	.container {
 		display: grid;
    grid-template-columns: repeat(2, 1fr);
    width: 960px;
    margin-left: 47px;
 	}
 
-	.all-dish h3 {
+	.container h3 {
 		margin-bottom: 4px;
 	}
 
@@ -190,7 +188,6 @@ border-radius: 25px;
   
   @media screen and (min-width: 1280px) {
 	.menu-category {
-	  width: 1280px;
 	  padding: 0;
 	  display: flex;
 	  align-items: center;
@@ -208,14 +205,14 @@ border-radius: 25px;
 	.menu-category h2 {
 }
 
-	.all-dish {
+	.container {
 		display: grid;
    grid-template-columns: repeat(2, 1fr);
    width: 1140px;
    margin-left: 47px;
 	}
 
-	.all-dish h3 {
+	.container h3 {
 		margin-bottom: 4px;
 		font-family: 'Montserrat';
 	font-style: normal;
