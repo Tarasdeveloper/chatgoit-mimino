@@ -1,11 +1,10 @@
 const swiper = new Swiper('.swiper', {
+
+  loop: true,
+  
   navigation: {
     nextEl: '.about-rest-bth-right',
     prevEl: '.about-rest-bth-left',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 
   breakpoints: {
