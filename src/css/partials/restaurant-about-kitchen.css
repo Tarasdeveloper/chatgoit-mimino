@@ -58,7 +58,6 @@
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
    margin-right: 20px;
-   margin-bottom: 10px;
 }
 
 .kitchen-bottom-text {
@@ -150,24 +149,33 @@
    .kitchen-top-wrapper {
       flex-direction: row;
       align-items: center;
-      margin-top: -32px;
       margin-bottom: 0;
+      position: relative;
+      height: 492px;
+   }
+
+   .kitchen-top-img {
+      position: absolute;
+      right: 64px;
    }
 
    .kitchen-bottom-wrapper {
-      margin-top: -16px;
-      margin-bottom: -28px;
       position: relative;
+      width: 100%;
+      height: 484px;
    }
 
    .kitchen-bottom-img {
       margin-right: 48px;
       margin-bottom: 0;
+      position: absolute;
+      top: -16px;
    }
 
    .kitchen-bottom-text {
       max-width: 312px;
-      font-size: 16px
+      font-size: 16px;
+      margin-left: 400px;
    }
 
    .kitchen .swiper {
@@ -193,7 +201,6 @@
     }
 
    .kitchen-bottom-wrapper {
-      margin-top: -65px;
    }
 
    .kitchen-bottom-img {
