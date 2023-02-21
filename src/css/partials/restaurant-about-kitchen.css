@@ -101,9 +101,9 @@
       flex-wrap: wrap;
    }
 
-   /* .kitchen .swiper {
+   .kitchen .swiper {
       position: relative;
-   } */
+   }
 }
 
 @media (min-width: 1024px) {
