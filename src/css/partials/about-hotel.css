@@ -89,6 +89,7 @@
 .btn {
 }
 .about-hotel-icon {
+  transition: fill var(--transit);
 }
 .about-hotel-btn:hover .about-hotel-icon,.about-hotel-btn:focus .about-hotel-icon {
   fill: var(--accent-color)
