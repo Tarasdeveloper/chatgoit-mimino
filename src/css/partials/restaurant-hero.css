@@ -2,15 +2,6 @@ body {
     margin: 0;
 }
 
-.list {
-    list-style: none;
-    display: flex;
-}
-
-.link {
-    text-decoration: none;
-}
-
 .header-rest {
     position: relative;
     height: 740px;
