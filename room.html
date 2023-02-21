@@ -21,8 +21,9 @@
       referrerpolicy="no-referrer"
     />
     
+    
     <script type="module" crossorigin src="/chatgoit-mimino/assets/modal-window-e2d92267.js"></script>
-    <link rel="stylesheet" href="/chatgoit-mimino/assets/modal-window-69d86a0a.css">
+    <link rel="stylesheet" href="/chatgoit-mimino/assets/modal-window-a3cb315c.css">
   </head>
   <body>
    <header class="header-room ">
@@ -111,9 +112,51 @@
   </p>
 
   <div class="room-hero-btn-wrap">
-    <button class="room-hero-btn" type="button" data-modal-open>
+    <button class="room-hero-btn" type="button" modal-open>
       Переглянути ціни
     </button>
+  </div>
+</div>
+
+   <div class="room-price-backdrop is-hidden" data-modal>
+  <div class="room-price-modal">
+    <button type="button" class="room-price-modal-close-btn" modal-close>
+      <svg class="room-price-modal-close-btn-icon">
+        <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="room-price-modal-txt">ціни на номер</p>
+    <p class="room-name">Двомісний люкс</p>
+    <p class="room-name-txt">Категорія номеру</p>
+    <form class="room-price-contact-form">
+      <label class="room-price-contact-form-field">
+        <input
+          type="text"
+          class="room-price-contact-form-input"
+          placeholder="1"
+          name="user_name"
+          required
+          pattern="[0-9]{,3}"
+        />
+        <span class="room-price-contact-form-input-txt">Кількість ночей</span>
+      </label>
+      <label class="room-price-contact-form-field">
+        <input
+          type="text"
+          class="room-price-contact-form-input"
+          placeholder="1000"
+          name="user_name"
+          required
+          pattern="^[0-9]{,10}"
+        />
+        <span class="room-price-contact-form-input-txt">грн</span>
+      </label>
+    </form>
+    <div class="room-price-contact-form-btn-wrap">
+      <button type="submit" class="room-price-contact-form-btn" modal-open>
+        забронювати номер
+      </button>
+    </div>
   </div>
 </div>
 
