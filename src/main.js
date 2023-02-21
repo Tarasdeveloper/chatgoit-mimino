@@ -1,2 +1,3 @@
 import './js/about-rest-swiper';
-import './js/book-room-modal';
+import './js/modal-windows';
+import './js/kitchen-slider';

@@ -4,7 +4,6 @@
 }
 
 .kitchen-top-wrapper {
-   position: relative;
    display: flex;
    margin-bottom: 32px;
    flex-wrap: wrap;
@@ -41,8 +40,7 @@
 }
 
 .kitchen-top-img {
-   width: 244px;
-   background-color: #dadada;
+   background-color: var(--bg-img-color);
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
    align-self: flex-end;
@@ -56,8 +54,7 @@
 }
 
 .kitchen-bottom-img {
-   width: 200px;
-   background-color: #dadada;
+   background-color: var(--bg-img-color);
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
    margin-right: 20px;
@@ -70,13 +67,35 @@
    max-width: 163px;
 }
 
-@media (min-width: 414px) and (max-width: 514px) {
+.kitchen .swiper {
+   width: 414px;
+   height: 245px;
+}
+
+.kitchen .swiper-slide {
+   background-color: var(--bg-img-color);
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   border-radius: 2px;
+}
+
+@media (min-width: 414px) {
+   .kitchen > .container {
+      max-width: 514px;
+   }
+
    .kitchen-top-wrapper {
       flex-wrap: wrap;
    }
 }
 
 @media (min-width: 1024px) {
+   .kitchen > .container {
+      max-width: 977px;
+   }
+   .kitchen {
+      padding: 0 0 32px;
+   }
+
    .kitchen-pretitle {
       font-size: 32px;
       margin-bottom: 4px;
@@ -96,12 +115,41 @@
       flex-direction: row;
       align-items: center;
       margin-top: -32px;
+      margin-bottom: 0;
    }
 
-   .kitchen-top-img {
-      width: 400px;
+   .kitchen-bottom-wrapper {
+      margin-top: -16px;
+   }
+
+   .kitchen-bottom-img {
+      margin-right: 48px;
+   }
+
+   .kitchen-bottom-text {
+      max-width: 312px;
+      font-size: 16px
    }
 }
 
 @media (min-width: 1280px) {
+   .kitchen > .container {
+      max-width: 1140px;
+   }
+
+   .kitchen-top-inner {
+      margin-right: 40px;
+    }
+
+   .kitchen-top-text {
+      max-width: 518px;
+    }
+
+   .kitchen-bottom-wrapper {
+      margin-top: -65px;
+   }
+
+   .kitchen-bottom-img {
+      margin-right: 32px;
+    }
 }
