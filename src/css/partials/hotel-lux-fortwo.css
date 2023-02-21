@@ -1,0 +1,275 @@
+.double-room-section{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--background-color);
+    
+ 
+
+ }
+ .double-lux-container{
+   
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+
+ .double-lux-title{
+
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--pre-title-color);
+  
+ }
+
+
+
+.double-lux-logo{
+  font-family: 'FilmP3', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  line-height: 1.07;
+  color: var(--title-color);
+  font-size: 36px;
+  margin-bottom: 32px;
+
+}
+
+ .double-lux-theme{
+  
+  margin-bottom: 12px;
+  font-style: normal;
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: var(--black-color);
+
+ }
+
+ .double-lux-description{
+  font-family: 'Montserrat', sans-serif;;
+  margin-bottom: 28px;
+  max-width: 258px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+
+ }
+
+ 
+.double-lux-picture-wrap {
+  width: 100%;
+  max-width: 244px;
+  max-height: 322px;
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+ 
+}
+
+.double-lux-picture-wrap.double-lux-img {
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+ 
+
+.double-slider-flex{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.slider-picture-wrapper{
+  width: 100%;
+  max-width: 194px;
+}
+
+.double-lux-section-slider {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+
+.slider-arrows {
+  display: flex; 
+  gap: 32px;
+  justify-content:flex-start;
+}
+
+
+.button-list{
+  display: flex;
+  justify-content: center;
+}
+
+.button_one{
+  display: inline-block; 
+  min-width: 238px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 14px 24px;
+  background-color: var(--black-color);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  /* margin-right: 40px; */
+  margin-bottom: 24px; 
+  text-align: center;
+}
+
+.button_two {
+  display: inline-block;
+  min-width: 238px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 14px 24px;
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  cursor: pointer;
+  /* margin-bottom: 58px;  */
+  text-align:center;
+}
+/* -------MEDIA--------------- */
+
+@media screen and (min-width:1024px){
+   .double-room-section {
+      padding-top: 62px;
+      padding-bottom: 40px;
+
+   }
+
+   .double-lux-container{
+    position: relative;
+    padding-left: 47px;
+    padding-right: 47px;
+   
+  }
+
+   .double-lux-title{
+    font-size: 32px; 
+   }
+
+   
+.double-lux-logo{
+
+  font-size: 64px;
+  margin-bottom: 32px;
+
+}
+
+.double-lux-theme{
+  font-size: 30px;
+  margin-bottom: 16px;
+
+}
+
+.double-lux-description{
+  
+  font-size: 16px;
+  max-width: 419px;
+  margin-bottom: 176px;
+ }
+
+ .double-lux-picture-wrap {
+  max-width: 400px;
+  max-height: 524px;
+}
+
+.double-lux-picture-wrap.double-lux-img {
+  position: absolute;
+  top: -85px;
+  right: 100px;
+  margin-bottom: 48px;
+}
+
+.double-slider-flex{
+  display: flex;
+  
+  
+  
+}
+ 
+.slider-button-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+}
+
+@media screen and (min-width: 1280px){
+  .double-room-section {
+    padding-top: 72px;
+    
+
+ }
+
+ 
+
+ .slider-picture-wrapper{
+  width: 100%;
+  max-width: 254px;
+}
+
+ .double-lux-container{
+
+  padding-left: 85px;
+  padding-right: 85px;
+ 
+}
+
+.double-lux-logo{
+ 
+  margin-bottom: 62px;
+
+}
+
+.double-lux-title{
+  font-size: 36px; 
+ }
+
+ .double-lux-theme{
+  font-size: 36px;
+  margin-bottom: 24px;
+
+}
+
+
+ .double-lux-picture-wrap {
+  max-width: 460px;
+  max-height: 574px;
+}
+
+
+.double-lux-picture-wrap.double-lux-img {
+
+  top: -110px;
+  right: 180px;
+  margin-bottom: 48px;
+}
+
+
+}
+
+
