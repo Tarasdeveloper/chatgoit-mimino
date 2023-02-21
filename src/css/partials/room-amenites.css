@@ -53,8 +53,6 @@
 
 .amenites-button:hover,
 .amenites-button:focus {
-  font-size: 20px;
-  line-height: 1.2px;
   color: var(--black-color);
   background: var(--accent-color);
   border-radius: 25px;
@@ -92,9 +90,7 @@
   .room-amenites-container {
     width: 1024px;
   }
-  .amenites-button {
-    height: 65px;
-  }
+  
   .amenites-wrap {
     width: 757px;
   }
@@ -115,11 +111,12 @@
   }
   .amenites-button {
     min-width: 434px;
-
+    /* height: 65px; */
+    font-size: 24px;
     padding-top: 18px;
-    padding-right: 38px;
+    padding-right: 36px;
     padding-bottom: 18px;
-    padding-left: 38px;
+    padding-left: 36px;
   }
   .amenites-link-wrap {
     display: flex;
