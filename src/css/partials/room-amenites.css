@@ -1,0 +1,148 @@
+
+.amenites-title {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.15;
+  padding-top: 32px;
+  margin-bottom: 16px;
+  color: var(--black-color);
+}
+.amenites-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 16px;
+
+  color: var(--text-color);
+}
+
+.amenites-subtitle {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  margin-top: 32px;
+
+  color: var(--black-color);
+}
+
+.amenites-button {
+  text-align: center;
+  max-width: 414px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-top: 32px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+
+  color: var(--white-color);
+
+  background: var(--black-color);
+
+  border: 1px solid;
+  border-color: var(--accent-color);
+  border-radius: 25px;
+  transition: var(--transit);
+}
+
+.amenites-button:hover,
+.amenites-button:focus {
+  color: var(--black-color);
+  background: var(--accent-color);
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.amenites-link-wrap {
+  margin-bottom: 32px;
+}
+.amenites-link {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  gap: 13px;
+
+  color: var(--brown-color);
+}
+.amenites-arrow-icon {
+  display: flex;
+  fill: var(--brown-color);
+}
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .room-amenites-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .room-amenites-container {
+    width: 414px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .room-amenites-container {
+    width: 1024px;
+  }
+  
+  .amenites-wrap {
+    width: 757px;
+  }
+  .general-list {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 80px;
+    row-gap: 32px;
+    height: auto;
+  }
+  .general {
+    max-width: 1024px;
+    width: calc((100% - 80px) / 2);
+  }
+  .button-wrap {
+    display: flex;
+    justify-content: right;
+  }
+  .amenites-button {
+    min-width: 434px;
+    /* height: 65px; */
+    font-size: 24px;
+    padding-top: 18px;
+    padding-right: 36px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+  }
+  .amenites-link-wrap {
+    display: flex;
+    margin-bottom: 48px;
+    justify-content: right;
+  }
+}
+.amenites-link {
+  display: flex;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  gap: 17px;
+}
+
+@media screen and (min-width: 1280px) {
+  .room-amenites-container {
+    width: 1280px;
+  }
+
+  .general-list {
+    column-gap: 159px;
+    height: auto;
+  }
+  .general {
+    max-width: 1280px;
+    width: calc((100% - 159px) / 2);
+  }
+}

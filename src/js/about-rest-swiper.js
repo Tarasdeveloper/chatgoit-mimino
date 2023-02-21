@@ -1,7 +1,4 @@
-const swiper = new Swiper('.swiper', {
-
-  loop: true,
-  
+const swiper = new Swiper('.about-rest-swiper-container', {
   navigation: {
     nextEl: '.about-rest-bth-right',
     prevEl: '.about-rest-bth-left',
