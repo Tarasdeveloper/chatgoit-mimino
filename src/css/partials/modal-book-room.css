@@ -1,28 +1,22 @@
-/* ---------------------------- MODAL WINDOW ---------------------------- */
-.book-room-backdrop {
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 
-        opacity var(--transit),
-        visibility var(--transit);
-}
-.book-room-backdrop.is-hidden {
+/* Стили для модальных окон */
+
+.modal {
+    /* Скрываем окна  */
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-}
-.book-room-modal {
-    z-index: 100;
-    position: absolute;
+    
+    /*  Установаем ширину окна  */
+    width: 95%;
+    min-height: 400px;
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95%;
-    min-height: 780px;
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
     background: #FFFDEE;
     border: 1px solid #F3C653;
     box-shadow: 
@@ -30,11 +24,20 @@
         0px 1px 3px rgba(0, 0, 0, 0.12), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
-    padding: 60px 15px;
+    padding: 45px 15px;
+    transition: var(--transit);
 }
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
 .book-room-modal-close-btn {
-    width: 24px;
-    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +55,7 @@
 .book-room-modal-txt {
     font-family: 'Times New Roman';
     font-weight: 700;
-    font-size: 24px;
+    font-size: 17px;
     line-height: calc(28/24);
     letter-spacing: 0.05em;
     color: #000000;
@@ -71,7 +74,7 @@
 }
 .book-room-contact-form-input {
     width: 100%;
-    height: 54px;
+    height: 35px;
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 15px;
@@ -95,7 +98,7 @@
 }
 .book-room-select-field {
     width: 100%;
-    height: 54px;
+    height: 35px;
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 15px;
@@ -129,8 +132,8 @@
 .book-room-date-form-input-txt {
     text-align: justify;
     font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20/16);
+    font-size: 14px;
+    line-height: calc(17/14);
     letter-spacing: 0.02em;
     color: #C79002;
     padding-left: 12px;
@@ -145,7 +148,7 @@
     text-transform: uppercase;
     padding: 20px 22px;
     width: 100%;
-    min-height: 64px;
+    min-height: 35px;
 
     background: #000000;
     border: 1px solid var(--accent-color);
@@ -153,7 +156,7 @@
     cursor: pointer;
 
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     line-height: calc(24/20);
     letter-spacing: 0.04em;
     color: var(--white-color);
@@ -170,21 +173,32 @@
 /* ---------------------------- MEDIA  ---------------------------- */
 
 @media screen and (min-width: 414px) {
-    .book-room-modal {
+    .modal {
         width: 414px;
+        padding: 60px 15px;
+    }
+    .book-room-modal-txt {
+        font-size: 24px;
     }
     .book-room-contact-form-input {
         font-size: 20px;
+        height: 54px;
     }
     .book-room-select-field {
         font-size: 20px;
+        height: 54px;
         background-position: right 17px center;
     }
+    .book-room-contact-form-btn {
+        min-height: 64px;
+        font-size: 20px;
+    }
+
 }
 @media screen and (min-width: 1024px) {
-    .book-room-modal {
+    .modal {
         width: 712px;
-        min-height: 638px;
+        min-height: 500px;
         padding: 60px;
         z-index: 1000;
     }
@@ -211,6 +225,14 @@
         font-size: 24px;
         line-height: calc(28/24);
     }
+    .book-room-contact-form-input-txt {
+        font-size: 16px;
+        line-height: calc(20/16);
+    }
+    .book-room-date-form-input-txt {
+        font-size: 16px;
+        line-height: calc(20/16);
+    }
     .book-room-select-field {
         width: 288px;
         height: 64px;
@@ -226,7 +248,7 @@
         margin-bottom: 28px;
     }
     .book-room-select-wrap > .book-room-contact-form-input-txt {
-        padding-right: 140px;
+        padding-right: 120px;
     }
     .book-room-contact-form-btn-wrap {
         margin-top: 40px;
