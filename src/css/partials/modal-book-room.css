@@ -173,7 +173,7 @@
 /* ---------------------------- MEDIA  ---------------------------- */
 
 @media screen and (min-width: 414px) {
-    .book-room-modal {
+    .modal {
         width: 414px;
     }
     .book-room-contact-form-input {
@@ -185,9 +185,9 @@
     }
 }
 @media screen and (min-width: 1024px) {
-    .book-room-modal {
+    .modal {
         width: 712px;
-        min-height: 638px;
+        min-height: 500px;
         padding: 60px;
         z-index: 1000;
     }
