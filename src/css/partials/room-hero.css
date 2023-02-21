@@ -15,7 +15,7 @@ body {
   position: relative;
   height: 740px;
   padding-bottom: 16px;
-  background-image: url(../../images/hotel-hero/room-mob.webp);
+  background-image: url(/images/hotel-hero/room-mob.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,7 +220,7 @@ body {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header-room {
-      background-image: url(../../images/hotel-hero/room-mob@2x.webp);
+      background-image: url(/images/hotel-hero/room-mob@2x.webp);
     }
   }
 
@@ -241,14 +241,14 @@ body {
   .header-room {
     padding-bottom: 30px;
     height: 720px;
-    background-image: url(../../images/hotel-hero/room-tab.webp);
+    background-image: url(/images/hotel-hero/room-tab.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header-room {
-      background-image: url(../../images/hotel-hero/room-tab@2x.webp);
+      background-image: url(/images/hotel-hero/room-tab@2x.webp);
     }
   }
 
@@ -346,14 +346,14 @@ body {
 
 @media screen and (min-width: 1280px) {
   .header-room {
-    background-image: url(../../images/room-hero/room-hero-d.jpg);
+    background-image: url(/images/room-hero/room-hero-d.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .header-room {
-      background-image: url(../../images/room-hero/room-hero-dx2.jpg);
+      background-image: url(/images/room-hero/room-hero-dx2.jpg);
     }
   }
 
@@ -384,6 +384,7 @@ body {
     padding-inline: 85px;
     padding-top: 377px;
     max-width: 1280px;
+    position: relative;
   }
 
   .room-hero-btn-wrap {
