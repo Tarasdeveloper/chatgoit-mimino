@@ -142,11 +142,11 @@ border-radius: 25px;
 		margin-top: 58px;
 	}
 
-	.container {
+	.menu-category .container {
 		display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   width: 960px;
-   margin-left: 47px;
+		grid-template-columns: repeat(2, 1fr);
+		width: 960px;
+		margin-left: 47px;
 	}
 
 	.container h3 {
@@ -205,11 +205,11 @@ border-radius: 25px;
 	.menu-category h2 {
 }
 
-	.container {
+	.menu-category .container {
 		display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   width: 1140px;
-   margin-left: 47px;
+		grid-template-columns: repeat(2, 1fr);
+		width: 1140px;
+		margin-left: 47px;
 	}
 
 	.container h3 {
