@@ -68,28 +68,29 @@
    max-width: 163px;
 }
 
-.kitchen .swiper {
-   width: 414px;
-   position: absolute;
-   bottom: 0;
-   right: 0;
+.kitchen-slider {
+   position: relative;
+   height: 300px;
 }
 
-.kitchen .swiper-slide {
+.kitchen .swiper {
+   margin-bottom: 0;
+}
+
+.kitchen > .swiper-slide {
    background-color: var(--bg-img-color);
-   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
    cursor: grab;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   object-fit: cover;
 }
 
-.kitchen-button-list {
+.kitchen-button-arrows {
    display: flex;
    cursor: pointer;
    justify-content: flex-end;
-}
-
-.kitchen-button-left {
-   margin-right: 32px;
+   margin-top: 20px;
+   gap: 32px;
 }
 
 @media (min-width: 414px) {
@@ -101,8 +102,26 @@
       flex-wrap: wrap;
    }
 
+   .kitchen-bottom-wrapper {
+      margin-top: 0;
+      margin-bottom: 32px;
+   }
+
+   .kitchen-bottom-img {
+      margin-bottom: 0;
+   }
+
    .kitchen .swiper {
-      position: relative;
+      position: absolute;
+      bottom: 0;
+      right: -15px;
+      overflow: hidden;
+      width: 324px;
+   }
+
+   .kitchen-button-arrows {
+      padding-right: 15px;
+      overflow: hidden;
    }
 }
 
@@ -138,15 +157,25 @@
 
    .kitchen-bottom-wrapper {
       margin-top: -16px;
+      margin-bottom: -28px;
    }
 
    .kitchen-bottom-img {
       margin-right: 48px;
+      margin-bottom: 0;
    }
 
    .kitchen-bottom-text {
       max-width: 312px;
       font-size: 16px
+   }
+
+   .kitchen .swiper {
+      right: 0;
+   }
+
+   .kitchen-button-arrows {
+      padding-right: 0;
    }
 }
 
