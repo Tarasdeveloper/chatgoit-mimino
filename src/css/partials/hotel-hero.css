@@ -2,15 +2,6 @@ body {
     margin: 0;
 }
 
-.list {
-    list-style: none;
-    display: flex;
-}
-
-.link {
-    text-decoration: none;
-}
-
 .header-hotel {
     height: 740px;
     padding-block: 16px;
