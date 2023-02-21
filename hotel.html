@@ -21,8 +21,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/chatgoit-mimino/assets/modal-window-e2d92267.js"></script>
-    <link rel="stylesheet" href="/chatgoit-mimino/assets/modal-window-a3cb315c.css">
+    <script type="module" crossorigin src="/chatgoit-mimino/assets/kitchen-slider-0f15fa1f.js"></script>
+    <link rel="stylesheet" href="/chatgoit-mimino/assets/kitchen-slider-9d9fe688.css">
   </head>
   <body>
    <header class="header-hotel">
@@ -94,70 +94,8 @@
     <h1 class="hotel-hero-title">mimiho</h1>
     <h2 class="hotel-hero-pretitle">готель</h2>
     <div class="hotel-hero-btn-wrap">
-        <button class="hotel-hero-btn" type="button" modal-open>Забронювати номер</button>
-        <button class="hotel-hero-btn" type="button" modal-open>Переглянути ціни </button>
-    </div>
-</div>
-    <div class="book-room-backdrop is-hidden" data-modal>
-    <div class="book-room-modal">
-        <button type="button" class="book-room-modal-close-btn" modal-close>
-            <svg class="book-room-modal-close-btn-icon">
-                <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-cross"></use>
-            </svg>
-        </button>
-        <p class="book-room-modal-txt">забронювати номер</p>
-        <form class="book-room-contact-form">
-            <label class="book-room-contact-form-field">
-                <input 
-                    type="text" 
-                    class="book-room-contact-form-input" 
-                    placeholder="Ваше ім’я" 
-                    name="user_name" 
-                    required
-                    pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$">
-                <span class="book-room-contact-form-input-txt">На кого забронювати номер?</span>
-            </label>
-            <label class="book-room-contact-form-field">
-                <input 
-                    type="tel" 
-                    class="book-room-contact-form-input" 
-                    placeholder="+38 (___) ___-__-__" 
-                    name="user_phone" 
-                    required
-                    pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="xxx-xxx-xx-xx">
-                <span class="book-room-contact-form-input-txt">Номер телефону</span>
-            </label>
-            <div class="book-room-select-wrap">
-                <select class="book-room-select-field" name="room_category">
-                    <option value="double_room_lux">Двомісний люкс</option>
-                    <option value="triple_room">Трьохмісний</option>
-                    <option value="double_room">Двомісний</option>
-                </select>
-                <span class="book-room-contact-form-input-txt">Категорія номеру</span>
-            </div>
-            <label class="book-room-contact-form-field">
-                <input 
-                    type="date" 
-                    class="book-room-contact-form-input date-picker"
-                    name="check-in-date" 
-                    placeholder="Сьогодні"
-                    required>
-                    <span class="book-room-date-form-input-txt">Дата заїзду</span>
-            </label>
-            <label class="book-room-contact-form-field">
-                <input 
-                    type="date" 
-                    class="book-room-contact-form-input date-picker"
-                    name="check-out-date" 
-                    placeholder="Сьогодні"
-                    required>
-                    <span class="book-room-date-form-input-txt">Дата виїзду</span>
-            </label>
-        </form>
-        <div class="book-room-contact-form-btn-wrap">
-            <button type="submit" class="book-room-contact-form-btn">оформити бронювання</button>
-        </div>
+        <a href="#" class="hotel-hero-btn btn js-open-modal" data-modal="2">Забронювати номер</a>
+        <a href="#" class="hotel-hero-btn btn js-open-modal" data-modal="3">Переглянути ціни</a>
     </div>
 </div>
   </header>
@@ -280,7 +218,66 @@
 
 
    </footer>
-   
+   <div class="modal" data-modal="2">
+    <button type="button" class="book-room-modal-close-btn js-modal-close">
+        <svg class="book-room-modal-close-btn-icon">
+            <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-cross"></use>
+        </svg>
+    </button>
+    <p class="book-room-modal-txt">забронювати номер</p>
+    <form class="book-room-contact-form">
+        <label class="book-room-contact-form-field">
+            <input 
+                type="text" 
+                class="book-room-contact-form-input" 
+                placeholder="Ваше ім’я" 
+                name="user_name" 
+                required
+                pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$">
+            <span class="book-room-contact-form-input-txt">На кого забронювати номер?</span>
+        </label>
+        <label class="book-room-contact-form-field">
+            <input 
+                type="tel" 
+                class="book-room-contact-form-input" 
+                placeholder="+38 (___) ___-__-__" 
+                name="user_phone" 
+                required
+                pattern="+38[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx">
+            <span class="book-room-contact-form-input-txt">Номер телефону</span>
+        </label>
+        <div class="book-room-select-wrap">
+            <select class="book-room-select-field" name="room_category">
+                <option value="double_room_lux">Двомісний люкс</option>
+                <option value="triple_room">Трьохмісний</option>
+                <option value="double_room">Двомісний</option>
+            </select>
+            <span class="book-room-contact-form-input-txt">Категорія номеру</span>
+        </div>
+        <label class="book-room-contact-form-field">
+            <input 
+                type="date" 
+                class="book-room-contact-form-input date-picker"
+                name="check-in-date" 
+                placeholder="Сьогодні"
+                required>
+                <span class="book-room-date-form-input-txt">Дата заїзду</span>
+        </label>
+        <label class="book-room-contact-form-field">
+            <input 
+                type="date" 
+                class="book-room-contact-form-input date-picker"
+                name="check-out-date" 
+                placeholder="Сьогодні"
+                required>
+                <span class="book-room-date-form-input-txt">Дата виїзду</span>
+        </label>
+    </form>
+    <div class="book-room-contact-form-btn-wrap">
+        <button type="submit" class="book-room-contact-form-btn">оформити бронювання</button>
+    </div>
+</div>
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    
   </body>
