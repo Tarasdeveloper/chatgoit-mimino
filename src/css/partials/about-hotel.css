@@ -91,13 +91,13 @@
 .about-hotel-icon {
   transition: fill var(--transit);
 }
-.about-hotel-btn:hover .about-hotel-icon,.about-hotel-btn:focus .about-hotel-icon {
-  fill: var(--accent-color)
+.about-hotel-btn:hover .about-hotel-icon,
+.about-hotel-btn:focus .about-hotel-icon {
+  fill: var(--accent-color);
 }
 /* -----------------MEDIA---------------- */
 
 @media screen and (min-width: 414px) {
-
   .about-hotel > .container {
     width: 414px;
     margin-left: auto;
@@ -176,7 +176,8 @@
 
 @media screen and (min-width: 1280px) {
   .about-hotel > .container {
-    width: 1140px;}
+    width: 1140px;
+  }
   .about-hotel-after-title {
     font-size: 16px;
     max-width: 488px;
