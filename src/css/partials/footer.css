@@ -74,10 +74,7 @@
   .social-footer {
     display: none;
   }
-  .footer-title {
-    font-size: 64px;
-  }
-
+  
   .footer-box {
     padding-top: 80px;
     padding-left: 107px;
@@ -87,6 +84,7 @@
   }
 
   .footer-title {
+    font-size: 64px;
     margin-right: 163px;
   }
 
