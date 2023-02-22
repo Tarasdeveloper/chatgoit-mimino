@@ -131,7 +131,6 @@
 		grid-template-columns: repeat(2, 1fr);
 		width: 960px;
 		margin-left: 47px;
-
 	}
 
 	.menu-category .container h3 {
@@ -179,7 +178,7 @@
 	.menu-category h2 {
 		max-width: 324px;
 	}
-
+  
 	.menu-category .container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
