@@ -3,10 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/chatgoit-mimino/assets/favicon-f84a56be.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/chatgoit-mimino/assets/apple-touch-icon-261d8b9e.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEwklEQVRYR8WXb2xTVRTA77l93R+22XbdFpQQmAQxTklYDIG2TJtgpiYSXdsJxBjAoEbUoCF+MWLiiIlgnEb9IEoys0gw3eYWjbLECGVt2YcpC0KCBLcBTsiQde02tnZ993heQ8t7r+1WtooveR/eueee87vnnHvfucByfBAZRHpdazljG2WZ1QJn1cDQkpiOMMGADSLD/hnE49ZhyQeNXjkX0zCX0rmuTWWLKwpe4YAvk/LyufQTPMhGBMIhg4DmsjrvtdnmzAoQCni2GZj4AIBV5eJYr4OMjQvBmkx/84+yRSQjwMgxT2lRgWghx675OE4DQejhRmgsXeu9qh9LAxg/4akUkuimXK/Jh/OkDcHYEGP8MZPNe0FtVwOgrLywUPjIeW0+nacgkF2SZFxXUtdxJSnTAIQDriMc2LOZncOMQOwXDM4j42HORTkIXEEGVlOqCtVzKPdTjMFpgWyA3jDZrKAiriHd+xGxtyw2WgfO43FlTgpg1N+w1cjhmwyF9Cc5PRCKxr+tdnaO6cf7vn9q0Qpr8WYDiiYEDCPyvaFYyQ/VzpZpve6wb/PSUin+gmDiusXe8WkK4HLQU2xCvACA96gnyQj7TWZ4B2q8sblS8tfPz1hxkXRjqc1Lq5/9OUuprnF6J1IAoYDrdQnYJzrnX5ntbTvnMrbQ8UQKIgHXOcrjqlvGYGY6LpZVqopFGRvt3bLaIGa2CcatTIhT0cniLxfXt05mghj2e1aVAOygcC+h/J9hcuEX5g2HQ2nb8KrP81CJUZzWrd5Hq39ULRv1u5+QOHYRsTEpp2I7Mx3l66tuhjMpv+ZvdBZx8SOdiUWqHXCZM/Fwmf27EbVdCPndu8lws1pI5dlssbW/qZZFTnp+ARRO/QriaNxusR9pUcvDQc9Rclav15UFvG12tL2vAQj73V9zjs9rIiDYW2ZH+wGtUdcgnQ/L9UYpHe/R4fKuWh4KNp6VmPyAXjcq+GcVDu9rOgCXn3NmVwuFwDdMjo6PdQBDBLAsLQIMmiy2tr0agJMEgOkAUzJ8XrWh7VUNQCToGqC8Vv+PAA2DwEAT2gVHIEsKMkYgHHAHaZusz2cEwgHPHxzEffp0ZQSgQ6iVDqHn8gkQCaZHVbGfEWDM795j4Kip+IWmIBvADLKD5fb2lzRFeO1EQ22RBL/eiQjQn7DlLnvHdg2A8kE74TzthJXJgduKgKBt6NBuw2wRmAXAvYc63FQa7jjAzR5wgH5IlUoUbgcgRhGw5hgBasu6Tbb2x9NSoAhCQdcOibFD/yUA2UYqxF2WYX4w2SWnOiLl4jEedHdSU7IJEaaJNnarXwJG7XkpGaDTWPvQHzFK/4OoWppNN7E4ZP0j4RvrVj75U2KOpiccPPa02Vpg6KFUPKh3lI9vWuSVyZhsu9vZOZS0l9aW/xP0LClg4igN5BVCcc4hXl9q6/o9Yw2ohWM9Wy3cEDtMO0NTMPONAqXzN+qoG6gRvai3kfVqptQEHdO7JM72kZJpns6nBcCHI6HJfcmc5wyQVIz0banAaGw3QezM9Y5IhRmht1UWfH+5w3tpNvg5b8fJydj3ojE8df0RzmEjXcPXAMC9DEVFYhyA7gtwkZyeEnH0TUi8O5f2XJn6L2W6ej91tDqjAAAAAElFTkSuQmCC">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUElEQVQ4T5WTQWgTURCGZ17WxMsmq6IWimILeqkXERGzKVTppUWxzTbx4k3xoAeLgvRQrCK9eBGKgkrAk0KbpPWkIuhazG6DeFAQoRXBg6BC2zQpQlu6b5z30thQtcV32fdmZ775Z94bhDVrbjzVFAoHZ4mgHQiaAdWCL3x2F6XIbE9kJ+tDsHagkVSo0kjXBNIVtoXXgvWZICCEITMm+rAlu6RMGqCC5xvlMGdy/hq4xigJnkctcUJBNKDs9ajMA9oP4T0F8DAAMSlQRgmgVSCmCOgRlzMhiX4ahPslBJWYPTaEs4XU7k1CTnFohPXdjMVzfayE41bXpycdkb2dTxfrbSOsOp3OBlj2nesC4CoRlkwLG5Sssuec5s5d5KzF6FfRi+xYcrssETHuseRdSNhv2tmXWnCl4BRQgM3O49H4aJsyVnznGzs2qL2UxpFYYrg456fOhEBmtI2wELNzrVWAn/yOgDsZ8IwBHSuAEgMstV+WdGxLYtQtF0+dF3L5jrJxqW8sO3e4CvCcH1zzjg0BfvqCgOD2nwDf8ThbfENAIdkrBN6qAuCtZecPaQVlL3mDr6n/fwB8R+9MO39AA0oTXXsMCk0x4MW6PahTwHEfzXi+RQN007zkIG97JMIDAAEhkgP8Z/NKvRl+QJ8FSJudj9feAj+U7mg8/1gDXLfNOBjeluNmnqw5rPdVgzWzNNPZdPTVwuowMWQ+vHWQH9AlDjb+AZCs5u70wvRlFfy7hHrnyuvufSBC53jE2rmMZm6YHmcgdLn/90177EO9/y/HTBsgjsR/ygAAAABJRU5ErkJggg==">
-    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/chatgoit-mimino/assets/apple-touch-icon-261d8b9e.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEwklEQVRYR8WXb2xTVRTA77l93R+22XbdFpQQmAQxTklYDIG2TJtgpiYSXdsJxBjAoEbUoCF+MWLiiIlgnEb9IEoys0gw3eYWjbLECGVt2YcpC0KCBLcBTsiQde02tnZ993heQ8t7r+1WtooveR/eueee87vnnHvfucByfBAZRHpdazljG2WZ1QJn1cDQkpiOMMGADSLD/hnE49ZhyQeNXjkX0zCX0rmuTWWLKwpe4YAvk/LyufQTPMhGBMIhg4DmsjrvtdnmzAoQCni2GZj4AIBV5eJYr4OMjQvBmkx/84+yRSQjwMgxT2lRgWghx675OE4DQejhRmgsXeu9qh9LAxg/4akUkuimXK/Jh/OkDcHYEGP8MZPNe0FtVwOgrLywUPjIeW0+nacgkF2SZFxXUtdxJSnTAIQDriMc2LOZncOMQOwXDM4j42HORTkIXEEGVlOqCtVzKPdTjMFpgWyA3jDZrKAiriHd+xGxtyw2WgfO43FlTgpg1N+w1cjhmwyF9Cc5PRCKxr+tdnaO6cf7vn9q0Qpr8WYDiiYEDCPyvaFYyQ/VzpZpve6wb/PSUin+gmDiusXe8WkK4HLQU2xCvACA96gnyQj7TWZ4B2q8sblS8tfPz1hxkXRjqc1Lq5/9OUuprnF6J1IAoYDrdQnYJzrnX5ntbTvnMrbQ8UQKIgHXOcrjqlvGYGY6LpZVqopFGRvt3bLaIGa2CcatTIhT0cniLxfXt05mghj2e1aVAOygcC+h/J9hcuEX5g2HQ2nb8KrP81CJUZzWrd5Hq39ULRv1u5+QOHYRsTEpp2I7Mx3l66tuhjMpv+ZvdBZx8SOdiUWqHXCZM/Fwmf27EbVdCPndu8lws1pI5dlssbW/qZZFTnp+ARRO/QriaNxusR9pUcvDQc9Rclav15UFvG12tL2vAQj73V9zjs9rIiDYW2ZH+wGtUdcgnQ/L9UYpHe/R4fKuWh4KNp6VmPyAXjcq+GcVDu9rOgCXn3NmVwuFwDdMjo6PdQBDBLAsLQIMmiy2tr0agJMEgOkAUzJ8XrWh7VUNQCToGqC8Vv+PAA2DwEAT2gVHIEsKMkYgHHAHaZusz2cEwgHPHxzEffp0ZQSgQ6iVDqHn8gkQCaZHVbGfEWDM795j4Kip+IWmIBvADLKD5fb2lzRFeO1EQ22RBL/eiQjQn7DlLnvHdg2A8kE74TzthJXJgduKgKBt6NBuw2wRmAXAvYc63FQa7jjAzR5wgH5IlUoUbgcgRhGw5hgBasu6Tbb2x9NSoAhCQdcOibFD/yUA2UYqxF2WYX4w2SWnOiLl4jEedHdSU7IJEaaJNnarXwJG7XkpGaDTWPvQHzFK/4OoWppNN7E4ZP0j4RvrVj75U2KOpiccPPa02Vpg6KFUPKh3lI9vWuSVyZhsu9vZOZS0l9aW/xP0LClg4igN5BVCcc4hXl9q6/o9Yw2ohWM9Wy3cEDtMO0NTMPONAqXzN+qoG6gRvai3kfVqptQEHdO7JM72kZJpns6nBcCHI6HJfcmc5wyQVIz0banAaGw3QezM9Y5IhRmht1UWfH+5w3tpNvg5b8fJydj3ojE8df0RzmEjXcPXAMC9DEVFYhyA7gtwkZyeEnH0TUi8O5f2XJn6L2W6ej91tDqjAAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUElEQVQ4T5WTQWgTURCGZ17WxMsmq6IWimILeqkXERGzKVTppUWxzTbx4k3xoAeLgvRQrCK9eBGKgkrAk0KbpPWkIuhazG6DeFAQoRXBg6BC2zQpQlu6b5z30thQtcV32fdmZ775Z94bhDVrbjzVFAoHZ4mgHQiaAdWCL3x2F6XIbE9kJ+tDsHagkVSo0kjXBNIVtoXXgvWZICCEITMm+rAlu6RMGqCC5xvlMGdy/hq4xigJnkctcUJBNKDs9ajMA9oP4T0F8DAAMSlQRgmgVSCmCOgRlzMhiX4ahPslBJWYPTaEs4XU7k1CTnFohPXdjMVzfayE41bXpycdkb2dTxfrbSOsOp3OBlj2nesC4CoRlkwLG5Sssuec5s5d5KzF6FfRi+xYcrssETHuseRdSNhv2tmXWnCl4BRQgM3O49H4aJsyVnznGzs2qL2UxpFYYrg456fOhEBmtI2wELNzrVWAn/yOgDsZ8IwBHSuAEgMstV+WdGxLYtQtF0+dF3L5jrJxqW8sO3e4CvCcH1zzjg0BfvqCgOD2nwDf8ThbfENAIdkrBN6qAuCtZecPaQVlL3mDr6n/fwB8R+9MO39AA0oTXXsMCk0x4MW6PahTwHEfzXi+RQN007zkIG97JMIDAAEhkgP8Z/NKvRl+QJ8FSJudj9feAj+U7mg8/1gDXLfNOBjeluNmnqw5rPdVgzWzNNPZdPTVwuowMWQ+vHWQH9AlDjb+AZCs5u70wvRlFfy7hHrnyuvufSBC53jE2rmMZm6YHmcgdLn/90177EO9/y/HTBsgjsR/ygAAAABJRU5ErkJggg=="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimino | Номер</title>
     <link
@@ -21,14 +35,13 @@
       referrerpolicy="no-referrer"
     />
     
-    
     <script type="module" crossorigin src="/chatgoit-mimino/assets/kitchen-slider-1e990afd.js"></script>
-    <link rel="stylesheet" href="/chatgoit-mimino/assets/kitchen-slider-c584198e.css">
+    <link rel="stylesheet" href="/chatgoit-mimino/assets/kitchen-slider-54f00ea2.css">
   </head>
   <body>
-   <header class="header-room ">
-   <!-------------- Header made by name -------------->
-   <div class="header-gradient">
+    <header class="header-room">
+      <!-------------- Header made by name -------------->
+      <div class="header-gradient">
   <div class="header-room-container">
     <a class="header-room-logo link" href="./index.html">mimiho</a>
     <div class="header-room-wrap">
@@ -112,62 +125,19 @@
   </p>
 
   <div class="room-hero-btn-wrap">
-    <button class="room-hero-btn" type="button" modal-open>
+    <button class="room-hero-btn js-open-modal" type="button" data-modal="3">
       Переглянути ціни
     </button>
   </div>
 </div>
 
-   <div class="room-price-backdrop is-hidden" data-modal>
-  <div class="room-price-modal">
-    <button type="button" class="room-price-modal-close-btn" modal-close>
-      <svg class="room-price-modal-close-btn-icon">
-        <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-cross"></use>
-      </svg>
-    </button>
-    <p class="room-price-modal-txt">ціни на номер</p>
-    <p class="room-name">Двомісний люкс</p>
-    <p class="room-name-txt">Категорія номеру</p>
-    <form class="room-price-contact-form">
-      <label class="room-price-contact-form-field">
-        <input
-          type="text"
-          class="room-price-contact-form-input"
-          placeholder="1"
-          name="user_name"
-          required
-          pattern="[0-9]{,3}"
-        />
-        <span class="room-price-contact-form-input-txt">Кількість ночей</span>
-      </label>
-      <label class="room-price-contact-form-field">
-        <input
-          type="text"
-          class="room-price-contact-form-input"
-          placeholder="1000"
-          name="user_name"
-          required
-          pattern="^[0-9]{,10}"
-        />
-        <span class="room-price-contact-form-input-txt">грн</span>
-      </label>
-    </form>
-    <div class="room-price-contact-form-btn-wrap">
-      <button type="submit" class="room-price-contact-form-btn" modal-open>
-        забронювати номер
-      </button>
-    </div>
-  </div>
-</div>
+    </header>
 
-   </header>
+    <main class="main">
+      <!------------- Room-hero made by name ------------->
 
-   <main class="main">
-     <!------------- Room-hero made by name ------------->
-     
-
-     <!----------- Room-amenites made by name ----------->
-     <section class="container room-amenites-container">
+      <!----------- Room-amenites made by name ----------->
+      <section class="container room-amenites-container">
   <h2 class="amenites-title">ЗРУЧНОСТІ У НОМЕРІ</h2>
   <div class="amenites-wrap">
     <p class="amenites-text">
@@ -341,12 +311,11 @@
 
 
 
- 
-   </main>
+    </main>
 
-   <footer class="footer">
-   <!---------------- Footer made by name ---------------->
-     <footer class="footer">
+    <footer class="footer">
+      <!---------------- Footer made by name ---------------->
+      <footer class="footer">
   <div class="container footer-container">
     <div class="footer-box">
       <a href="#" class="footer-title"><h3>MIMIHO</h3></a>
@@ -446,10 +415,48 @@
   </div>
 </footer>
 
+    </footer>
+    <div class="modal" data-modal="3">
+  <button type="button" class="room-price-modal-close-btn js-modal-close">
+    <svg class="room-price-modal-close-btn-icon">
+      <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="room-price-modal-txt">ціни на номер</p>
+  <p class="room-name">Двомісний люкс</p>
+  <p class="room-name-txt">Категорія номеру</p>
+  <form class="room-price-contact-form">
+    <label class="room-price-contact-form-field">
+      <input
+        type="text"
+        class="room-price-contact-form-input"
+        placeholder="1"
+        name="user_name"
+        required
+        pattern="[0-9]{,3}"
+      />
+      <span class="room-price-contact-form-input-txt">Кількість ночей</span>
+    </label>
+    <label class="room-price-contact-form-field">
+      <input
+        type="text"
+        class="room-price-contact-form-input"
+        placeholder="1000"
+        name="user_name"
+        required
+        pattern="^[0-9]{,10}"
+      />
+      <span class="room-price-contact-form-input-txt">грн</span>
+    </label>
+  </form>
+  <div class="room-price-contact-form-btn-wrap">
+    <button type="submit" class="room-price-contact-form-btn">
+      забронювати номер
+    </button>
+  </div>
+</div>
 
-   </footer>
-   
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
   </body>
 </html>

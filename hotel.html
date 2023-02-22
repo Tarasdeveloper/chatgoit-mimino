@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/chatgoit-mimino/assets/kitchen-slider-1e990afd.js"></script>
-    <link rel="stylesheet" href="/chatgoit-mimino/assets/kitchen-slider-c584198e.css">
+    <link rel="stylesheet" href="/chatgoit-mimino/assets/kitchen-slider-54f00ea2.css">
   </head>
   <body>
    <header class="header-hotel">
@@ -565,6 +565,46 @@
 
 
    </footer>
+   <div class="modal" data-modal="3">
+  <button type="button" class="room-price-modal-close-btn js-modal-close">
+    <svg class="room-price-modal-close-btn-icon">
+      <use href="/chatgoit-mimino/assets/icon-bea71fdc.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="room-price-modal-txt">ціни на номер</p>
+  <p class="room-name">Двомісний люкс</p>
+  <p class="room-name-txt">Категорія номеру</p>
+  <form class="room-price-contact-form">
+    <label class="room-price-contact-form-field">
+      <input
+        type="text"
+        class="room-price-contact-form-input"
+        placeholder="1"
+        name="user_name"
+        required
+        pattern="[0-9]{,3}"
+      />
+      <span class="room-price-contact-form-input-txt">Кількість ночей</span>
+    </label>
+    <label class="room-price-contact-form-field">
+      <input
+        type="text"
+        class="room-price-contact-form-input"
+        placeholder="1000"
+        name="user_name"
+        required
+        pattern="^[0-9]{,10}"
+      />
+      <span class="room-price-contact-form-input-txt">грн</span>
+    </label>
+  </form>
+  <div class="room-price-contact-form-btn-wrap">
+    <button type="submit" class="room-price-contact-form-btn">
+      забронювати номер
+    </button>
+  </div>
+</div>
+
    <div class="modal" data-modal="2">
     <button type="button" class="book-room-modal-close-btn js-modal-close">
         <svg class="book-room-modal-close-btn-icon">
