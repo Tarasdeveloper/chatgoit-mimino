@@ -2,7 +2,6 @@ const swiper = new Swiper('.kitchen-swiper', {
    // Optional parameters
    loop: true,
    
- 
    // Navigation arrows
    navigation: {
      nextEl: '.kitchen-button-left',
