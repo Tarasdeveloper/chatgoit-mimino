@@ -159,6 +159,7 @@
    .kitchen-top-img {
       position: absolute;
       right: 64px;
+      top: -32px;
    }
 
    .kitchen-bottom-wrapper {
@@ -230,9 +231,5 @@
    .kitchen-swiper {
       top: 0;
       width: 548px;
-   }
-
-   .kitchen-button-arrows {
-      
    }
 }
