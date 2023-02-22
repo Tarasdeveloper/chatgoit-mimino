@@ -1,7 +1,6 @@
 .kitchen {
    padding: 15px 0 20px;
    background-color: var(--background-color);
-   position: relative;
 }
 
 .kitchen-top-wrapper {
@@ -129,8 +128,9 @@
    .kitchen > .container {
       max-width: 977px;
    }
+
    .kitchen {
-      padding: 0 0 32px;
+      padding: 0 0 273px;
    }
 
    .kitchen-pretitle {
@@ -165,7 +165,8 @@
    .kitchen-bottom-wrapper {
       position: relative;
       width: 100%;
-      height: 484px;
+      height: 360px;
+      margin-bottom: 0;
    }
 
    .kitchen-bottom-img {
@@ -181,16 +182,34 @@
       margin-left: 400px;
    }
 
+   .kitchen-slider {
+      position: absolute;
+      right: 0;
+      bottom: -32%;
+      height: 326px;
+      width: 548px;
+   }
+
    .kitchen-swiper {
       right: 0;
+      width: 548px;
+      top: 0;
    }
 
    .kitchen-button-arrows {
       padding-right: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 10;
    }
 }
 
 @media (min-width: 1280px) {
+   .kitchen {
+      padding: 0 0 273px;
+   }
+
    .kitchen > .container {
       max-width: 1140px;
    }
@@ -231,6 +250,7 @@
    .kitchen-swiper {
       top: 0;
       width: 548px;
+      right: 0;
    }
 
    /* .kitchen-button-arrows {
