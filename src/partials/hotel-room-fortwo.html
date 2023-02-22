@@ -11,34 +11,32 @@
     <div class="double-lux-picture-wrap double-lux-img">
       <picture>
         <source
-         srcset="
-           ./images/about-hotel/hotel-room_mob.jpg 1x,
-           ./images/about-hotel/hotel-room_mob_2x.jpg  2x
-         "
-         media="(max-width: 1023px)"
-         type="image/jpeg"
-         />
-         <source
-         srcset=" 
-         ./images/about-hotel/hotel-room_tab.jpg.jpg 1x,
-         ./images/about-hotel/hotel-room_tab_2x.jpg 2x
-         "
-         media="(max-width: 1279px)"
-         type="image/jpeg"
-         />
-         <source
-         srcset=" 
-         ./images/about-hotel/hotel-room.jpg 1x,
-         ./images/about-hotel/hotel-room_2x.jpg 2x
-         "
-         media="(min-width: 1280px)"
-         type="image/jpeg"
-         />
+        srcset="
+          ./images/rooms/mobile_room.jpg 1x,
+          ./images/rooms/mobile_room@2x.jpg  2x
+        "
+        media="(max-width: 1023px)"
+        type="image/jpeg"
+        />
+        <source
+        srcset=" 
+        ./images/rooms/tablet_room.jpg 1x,
+        ./images/rooms/tablet_room@2x.jpg 2x
+        "
+        media="(max-width: 1279px)"
+        type="image/jpeg"
+        />
+        <source
+        srcset=" 
+        ./images/rooms/desctop_room.jpg 1x,
+        ./images/rooms/desctop_room@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/jpeg"
+        />
 
-         <img src="./images/about-hotel/hotel-room_mob.jpg" alt="Двомісний номер" width="100%">    
+        <img src="./images/rooms/mobile_room.jpg" alt="Двомісний номер" width="100%">   
      </picture>     
-       </picture> 
-      <picture></picture>
     </div>
     <div class="slider-button-flex">
     <div class="double-slider-flex">
@@ -124,11 +122,11 @@
     </div>
     <div class="button-list">
       <ul>
-        <li>
-          <button type="button" class="button_one">Детальніше</button>
+        <li><a href="./room-amenites.html"></a>
+          <button type="button" class="hotel_button upper_button" >Детальніше </button>
         </li>
         <li>
-          <button type="button" class="button_two">
+          <button type="button" class="hotel_button">
             Переглянути ціни
           </button>
         </li>
