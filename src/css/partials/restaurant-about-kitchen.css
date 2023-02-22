@@ -24,6 +24,7 @@
 
 .kitchen-title {
    font-family: 'FilmP3', sans-serif;
+   font-weight: 700;
    font-size: 40px;
    line-height: 1.08;
    letter-spacing: 0.3em;
@@ -69,7 +70,6 @@
    position: relative;
    height: 300px;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-   width: 548px;
 }
 
 .kitchen-swiper {
@@ -92,6 +92,11 @@
    gap: 32px;
 }
 
+.swiper-slide img {
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   margin-right: 24px;
+}
+
 @media (min-width: 414px) {
    .kitchen > .container {
       max-width: 514px;
@@ -112,8 +117,6 @@
 
    .kitchen-swiper {
       position: absolute;
-      bottom: 0;
-      right: -15px;
       overflow: hidden;
       width: 324px;
    }
