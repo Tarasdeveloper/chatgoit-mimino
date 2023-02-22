@@ -1,3 +1,4 @@
+
 .menu-category h2 {
 	font-family: 'Times New Roman';
 	font-style: normal;
@@ -130,6 +131,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		width: 960px;
 		margin-left: 47px;
+
 	}
 
 	.menu-category .container h3 {
@@ -141,14 +143,20 @@
 		flex: 1;
 	}
 
+	.weight {
+		margin-left: auto;
+	}
+
 	.menu-item {
 		margin-top: 12px;
 	}
 
-	.end-dish {
+	.end-dish .weight {
+		margin-left: 30px;
 		margin-left: 88px;
 		margin-top: 65px;
 		margin-right: 48px;
+
 	}
 
 	.btn-wrap {
@@ -231,6 +239,10 @@
 		margin-bottom: 20px;
 	}
 
+	.end-dish .weight {
+		margin-left: 53px;
+	}
+
 	.price {
 		font-family: 'Montserrat';
 		font-style: normal;
@@ -243,6 +255,6 @@
 	.btn-wrap {
 		margin-left: 959px;
 		margin-right: 0;
-		margin-right: 85px;
+		margin-right: 120px;
 	}
 }
