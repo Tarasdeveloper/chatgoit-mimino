@@ -74,6 +74,7 @@ font-size: 14px;
 line-height: 1.21;
 letter-spacing: 0.02em;
 color: var(--black-color);
+margin-left: 36px;
 }
 
 .btn-wrap {
@@ -151,19 +152,21 @@ border-radius: 25px;
 		flex: 1;
 	}
 
+	.weight {
+		margin-left: auto;
+	}
+
 	.menu-item {
 		margin-top: 12px;
 	}
 
 	.end-dish {
 	margin-left: 88px;
-	margin-top: 65px;
+	margin-top: 45px;
 	margin-right: 48px;
 	}
 
 	.end-dish h2 {
-		margin-top: ;
-		margin-bottom: ;
 	}
 
 	.btn-wrap {
@@ -193,7 +196,7 @@ border-radius: 25px;
 	.container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-   width: 1140px;
+   width: 1280px;
    margin-left: 47px;
 	}
 
@@ -236,7 +239,6 @@ height: 30px;
 	.end-dish {
 	margin-left: 88px;
 	margin-top: 65px;
-	margin-right: 85px;
 	align-items: center;
 	}
 
@@ -253,6 +255,10 @@ letter-spacing: 0.02em;
 		margin-bottom: 20px;
 	}
 
+	.end-dish .weight {
+		margin-left: 53px;
+	}
+
 	.price {
 		font-family: 'Montserrat';
 font-style: normal;
@@ -265,7 +271,7 @@ letter-spacing: 0.02em;
 	.btn-wrap {
 		margin-left: 959px;
 		margin-right: 0;
-		margin-right: 85px;
+		margin-right: 120px;
 	}
 
 	.btn-tbl {
