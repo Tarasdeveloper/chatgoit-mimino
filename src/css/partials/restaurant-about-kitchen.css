@@ -49,7 +49,6 @@
 .kitchen-bottom-wrapper {
    display: flex;
    margin-bottom: 22px;
-   flex-wrap: wrap;
    align-items: center;
 }
 
@@ -58,7 +57,6 @@
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
    margin-right: 20px;
-   margin-bottom: 10px;
 }
 
 .kitchen-bottom-text {
@@ -67,15 +65,31 @@
    max-width: 163px;
 }
 
-.kitchen .swiper {
-   width: 414px;
-   height: 245px;
+.kitchen-slider {
+   position: relative;
+   height: 300px;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   width: 548px;
 }
 
-.kitchen .swiper-slide {
+.kitchen-swiper {
+   margin-bottom: 0;
+}
+
+.kitchen > .swiper-slide {
    background-color: var(--bg-img-color);
-   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
+   cursor: grab;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   object-fit: cover;
+}
+
+.kitchen-button-arrows {
+   display: flex;
+   cursor: pointer;
+   justify-content: flex-end;
+   margin-top: 20px;
+   gap: 32px;
 }
 
 @media (min-width: 414px) {
@@ -86,14 +100,37 @@
    .kitchen-top-wrapper {
       flex-wrap: wrap;
    }
+
+   .kitchen-bottom-wrapper {
+      margin-top: 0;
+      margin-bottom: 32px;
+   }
+
+   .kitchen-bottom-img {
+      margin-bottom: 0;
+   }
+
+   .kitchen-swiper {
+      position: absolute;
+      bottom: 0;
+      right: -15px;
+      overflow: hidden;
+      width: 324px;
+   }
+
+   .kitchen-button-arrows {
+      padding-right: 15px;
+      overflow: hidden;
+   }
 }
 
 @media (min-width: 1024px) {
    .kitchen > .container {
       max-width: 977px;
    }
+
    .kitchen {
-      padding: 0 0 32px;
+      padding: 0 0 273px;
    }
 
    .kitchen-pretitle {
@@ -114,42 +151,108 @@
    .kitchen-top-wrapper {
       flex-direction: row;
       align-items: center;
-      margin-top: -32px;
       margin-bottom: 0;
+      position: relative;
+      height: 492px;
+   }
+
+   .kitchen-top-img {
+      position: absolute;
+      right: 64px;
+      top: -32px;
    }
 
    .kitchen-bottom-wrapper {
-      margin-top: -16px;
+      position: relative;
+      width: 100%;
+      height: 360px;
+      margin-bottom: 0;
    }
 
    .kitchen-bottom-img {
       margin-right: 48px;
+      margin-bottom: 0;
+      position: absolute;
+      top: -16px;
    }
 
    .kitchen-bottom-text {
       max-width: 312px;
-      font-size: 16px
+      font-size: 16px;
+      margin-left: 400px;
+   }
+
+   .kitchen-slider {
+      position: absolute;
+      right: 0;
+      bottom: -32%;
+      height: 326px;
+      width: 548px;
+   }
+
+   .kitchen-swiper {
+      right: 0;
+      width: 548px;
+      top: 0;
+   }
+
+   .kitchen-button-arrows {
+      padding-right: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 10;
    }
 }
 
 @media (min-width: 1280px) {
+   .kitchen {
+      padding: 0 0 273px;
+   }
+
    .kitchen > .container {
       max-width: 1140px;
    }
 
    .kitchen-top-inner {
       margin-right: 40px;
-    }
+   }
 
    .kitchen-top-text {
       max-width: 518px;
-    }
+   }
+
+   .kitchen-top-wrapper {
+      height: 541px;
+   }
+
+   .kitchen-top-img {
+      right: 93px;
+   }
 
    .kitchen-bottom-wrapper {
-      margin-top: -65px;
+      height: 365px;
+      margin-bottom: 0;
+   }
+
+   .kitchen-bottom-text {
+      margin-left: 44.5%;
    }
 
    .kitchen-bottom-img {
-      margin-right: 32px;
-    }
+      top: -65px;
+   }
+
+   .kitchen-slider {
+      height: 358px;
+   }
+
+   .kitchen-swiper {
+      top: 0;
+      width: 548px;
+      right: 0;
+   }
+
+   /* .kitchen-button-arrows {
+   } */
 }
