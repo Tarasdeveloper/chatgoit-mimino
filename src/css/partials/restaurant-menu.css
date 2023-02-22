@@ -136,7 +136,7 @@ border-radius: 25px;
 	.container {
 		display: grid;
    grid-template-columns: repeat(2, 1fr);
-   width: 960px;
+   width: 1024px;
    margin-left: 47px;
 	}
 
@@ -166,7 +166,8 @@ border-radius: 25px;
 	margin-right: 48px;
 	}
 
-	.end-dish h2 {
+	.end-dish .weight {
+		margin-left: 30px;
 	}
 
 	.btn-wrap {
