@@ -92,7 +92,7 @@
   border: 2px solid var(--white-color);
   border-radius: 25px;
   margin-bottom: 16px;
-    transition: background-color var(--transit), border-color var(--transit);
+  transition: background-color var(--transit), border-color var(--transit);
 }
 .details-hotel-link-wrap {
   width: 236px;
@@ -212,6 +212,5 @@
   .details-hotel-btn-wrap {
     top: 366px;
     left: 874px;
-    
   }
 }
