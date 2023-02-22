@@ -11,9 +11,10 @@
   color: var(--pre-title-color);
 }
 
-.about-rest-title {
+.about-rest-logo {
   margin-bottom: 12px;
   font-family: 'FilmP3', sans-serif;
+  font-weight: 700;
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
@@ -60,25 +61,24 @@
   justify-content: space-between;
 }
 
-/* .about-rest-slider {
-  margin-bottom: 20px;
+.about-rest-img-container {
   display: flex;
-  gap: 25px;
-  justify-content: center;
-} */
 
-.about-rest-swiper {
   width: 245px;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
-/* .swiper-slide-img {
+.about-rest-img img {
   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-} */
+}
+
+.buffet-table-second {
+  display: none;
+}
 
 .about-rest-list {
   display: flex;
@@ -101,16 +101,20 @@
     width: 414px;
   }
 
-  .about-rest-swiper {
-    position: absolute;
-    bottom: 40px;
-    right: 0px;
-
-    width: 330px;
-  }
-
   .about-rest-thumb {
     margin-bottom: 297px;
+  }
+
+  .about-rest-img-container {
+    position: absolute;
+    right: 0px;
+    bottom: 35px;
+    width: 330px;
+    gap: 25px;
+  }
+
+  .buffet-table-second {
+    display: block;
   }
 }
 
@@ -149,13 +153,18 @@
   .about-rest-wrap.about-rest-img {
     position: absolute;
     top: -153px;
-    /* left: 519px; */
     right: 70px;
   }
 
   .about-rest-thumb {
     justify-content: flex-start;
-    margin-bottom: 198px;
+    margin-bottom: 180px;
+  }
+
+  .about-rest-img-container {
+    right: 15px;
+    width: 428px;
+    gap: 40px;
   }
 
   .about-rest-text {
@@ -163,19 +172,6 @@
     max-width: 312px;
     font-size: 16px;
   }
-
-  .about-rest-swiper {
-    width: 428px;
-    bottom: 50px;
-    right: 15px;
-  }
-
-  /* .about-rest-slider {
-    position: absolute;
-    bottom: 60px;
-    right: 15px;
-    gap: 40px;
-  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -201,16 +197,14 @@
     margin-bottom: 143px;
   }
 
+  .about-rest-img-container {
+    bottom: 45px ;
+    width: 548px;
+  }
+
   .about-rest-text {
     margin-left: 32px;
   }
 
-  .about-rest-swiper {
-    width: 548px;
-  }
-
-  /* .about-rest-slider {
-    bottom: 60px;
-    right: 15px;
-  } */
+  
 }

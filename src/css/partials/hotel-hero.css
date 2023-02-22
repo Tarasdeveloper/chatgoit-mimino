@@ -207,6 +207,9 @@ body {
         flex-direction: row;
         align-items: flex-start;
     }
+    .header-hotel-nav {
+        padding-top: 10px;
+    }
 
     .header-hotel-tel {
         width: 24px;
@@ -260,6 +263,7 @@ body {
     }
 
     .header-hotel-nav {
+        padding-top: 0;
         margin-bottom: 0px;
     }
 
@@ -314,7 +318,7 @@ body {
     }
 
     .hotel-hero-pretitle {
-        margin-bottom: 226px;
+        margin-bottom: 230px;
     }
 
     .hotel-hero-btn-wrap {
@@ -376,7 +380,7 @@ body {
     }
 
     .hotel-hero-pretitle {
-        margin-bottom: 249px;
+        margin-bottom: 247px;
     }
 
     .hotel-hero-btn-wrap {

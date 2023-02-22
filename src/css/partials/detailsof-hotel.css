@@ -65,12 +65,14 @@
 }
 .details-hotel-control {
   fill: var(--white-color);
+  transition: fill var(--transit);
 }
 .details-hotel-control:hover,
 .details-hotel-control:focus {
   fill: var(--accent-color);
 }
 .details-hotel-icon {
+  transition: fill var(--transit);
 }
 .details-hotel-btn-wrap {
   text-align: center;
@@ -90,6 +92,7 @@
   border: 2px solid var(--white-color);
   border-radius: 25px;
   margin-bottom: 16px;
+    transition: background-color var(--transit), border-color var(--transit);
 }
 .details-hotel-link-wrap {
   width: 236px;

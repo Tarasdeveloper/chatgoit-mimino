@@ -1,32 +1,28 @@
-.room-price-backdrop {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity var(--transit), visibility var(--transit);
-}
-.room-price-backdrop.is-hidden {
+.modal {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
-}
-.room-price-modal {
-  z-index: 100;
-  position: absolute;
+  width: 95%;
+  min-height: 400px;
+
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 95%;
+  z-index: 30;
 
   background: #fffdee;
   border: 1px solid #f3c653;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  padding: 60px 15px;
+  padding: 45px 15px;
+  transition: var(--transit);
 }
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .room-price-modal-close-btn {
   width: 24px;
   height: 24px;
@@ -149,7 +145,7 @@
 }
 
 @media screen and (min-width: 414px) {
-  .room-price-modal {
+  .modal {
     width: 414px;
   }
   .room-price-contact-form-input {
@@ -157,7 +153,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .room-price-modal {
+  .modal {
     width: 712px;
 
     padding: 60px;
