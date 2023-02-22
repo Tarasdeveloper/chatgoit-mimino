@@ -1,4 +1,3 @@
-
 .amenites-title {
   font-family: 'Times New Roman';
   font-weight: 400;
@@ -69,11 +68,22 @@
   gap: 13px;
 
   color: var(--brown-color);
+  transition: var(--transit);
+}
+.amenites-link:hover,
+.amenites-link:focus {
+  color: var(--accent-color);
 }
 .amenites-arrow-icon {
   display: flex;
   fill: var(--brown-color);
+  transition: var(--transit);
 }
+.amenites-arrow-icon:hover,
+.amenites-arrow-icon:focus {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 320px) and (max-width: 413px) {
   .room-amenites-container {
     max-width: 100%;
@@ -90,7 +100,7 @@
   .room-amenites-container {
     width: 1024px;
   }
-  
+
   .amenites-wrap {
     width: 757px;
   }
