@@ -1,4 +1,4 @@
-const swiper = new Swiper('.kitchen-swiper', {
+const swiper = new Swiper('.kitchen-swipe', {
    // Optional parameters
    loop: true,
    
