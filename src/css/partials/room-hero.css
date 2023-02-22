@@ -26,8 +26,7 @@ body {
     180deg,
     #000000 0%,
     rgba(0, 0, 0, 0.55) 54.17%,
-    rgba(0, 0, 0, 0) 100%
-  );
+    rgba(0, 0, 0, 0) 100%);
 }
 
 .header-room-container {
@@ -43,6 +42,8 @@ body {
   padding-inline: 15px;
   padding-top: 17px;
   gap: 12px;
+  
+
 }
 
 .header-room-logo {
@@ -139,7 +140,7 @@ body {
   position: absolute;
   display: flex;
   gap: 7px;
-  left: 15px;
+  left: -25px;
   top: 630px;
   flex-direction: column;
 }
@@ -223,6 +224,9 @@ body {
       background-image: url(/images/hotel-hero/room-mob@2x.webp);
     }
   }
+
+  .header-room-soc-list {
+    left: 15px;}
 
   .header-room-container {
     padding-inline: 15px;
@@ -318,6 +322,20 @@ body {
     flex-direction: row;
     gap: 20px;
   }
+
+  /* .header-room-soc-list {
+    position: absolute;
+    display: flex;
+    gap: 7px;
+    left: 15px;
+    top: 630px;
+    flex-direction: column;
+  } */
+
+
+
+
+
   .header-gradient {
     height: 116px;
   }
