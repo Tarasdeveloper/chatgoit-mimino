@@ -19,23 +19,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 36px 15px 32px 15px;
-}
-
-.contacts-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
-  padding-inline: 15px;
-  margin: 0 auto;
-  max-width: 414px;
+  padding-top: 36px;
+  padding-bottom: 32px;
 }
 
 .contacts-logo {
@@ -52,6 +37,7 @@ body {
   display: block;
   margin-bottom: 12px;}
 
+
 .contacts-text {
   font-family: 'Montserrat';
   margin-bottom: 24px;
@@ -59,9 +45,9 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
-    letter-spacing: 0.02em;
-
+  letter-spacing: 0.02em;
   color: #7a7a7a;
+  text-align: left;
 }
 
 .contacts-wrap {
@@ -90,6 +76,7 @@ body {
 
 .contacts-item {
   display: flex;
+
   align-items:center;
   
   height: 24px;
@@ -114,12 +101,11 @@ body {
   align-items: center;
   min-width: 144px;
   min-height: 40px;
-  background-color: #FFFFFF;
-  border: 0.5px solid #F3C653;
-border-radius: 2px;
-padding-left: 8px;
-padding-right: 8px;
-
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
 
 }
 
@@ -146,7 +132,7 @@ padding-right: 8px;
   line-height: calc(17 / 14);
   letter-spacing: 0.017em;
   color: #494848;
-  
+
 }
 
 .contacts-address-wrap {
@@ -156,7 +142,8 @@ padding-right: 8px;
   padding-top: 8px;
   border: 1px solid var(--social-icon-color);
   border-radius: 2px;
-background-color: #FFFFFF;
+
+  background-color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -166,7 +153,6 @@ background-color: #FFFFFF;
   margin-bottom: 32px;
   margin-left: 124px;
   height: 76px;
-  
 }
 
 .contacts-address-link {
@@ -193,13 +179,15 @@ background-color: #FFFFFF;
   fill: var(--social-icon-color);
 }
 .map-wrap {
-    border: 1px solid #BABABA;
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-border-radius: 2px;
-width: 384px;
-height: 220px;
-background-image: url(/images/contacts/map-mob.jpg);
-background-repeat: no-repeat;
+
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  width: 384px;
+  height: 220px;
+  background-image: url(/images/contacts/map-mob.jpg);
+  background-repeat: no-repeat;
+
   background-position: center;
   background-size: cover;
 }
@@ -210,6 +198,71 @@ background-repeat: no-repeat;
   align-items: center;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 414px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .map-wrap {
+      background-image: url(/images/contacts/map-mob-x2.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .map-wrap {
+    width: 535px;
+    height: 412px;
+    background-image: url(/images/contacts/map-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .map-wrap {
+      background-image: url(/images/contacts/map-tab-x2.jpg);
+    }
+  }
+
+  .map-link {
+    width: 535px;
+    height: 412px;
+  }
+
+  .contacts {
+    padding-top: 56px;
+    padding-bottom: 44px;
+  }
+
+  .room-hero-btn-wrap {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  .contacts-logo {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    width: 202px;
+    height: 69px;
+    margin-bottom: 8px;
+  }
+  .contacts-text {
+    margin-bottom: 52px;
+  }
+  .contacts-address-wrap {
+    margin-top: 97px;
+    margin-bottom: 0;
+    margin-right: 110px;
+    margin-left: 0px;
+    width: 285px;
+    height: 56px;
+    padding-right: 12px;
+    padding-left: 10px;
+  }
+
+  .contacts-item {
+    flex-direction: column;
+    align-items: flex-start;
+
 
 
 
@@ -245,49 +298,53 @@ height: 412px;}
 .contacts {
   
   min-height: 521px;}
-
-
-  .contacts-wrap {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    
-    
+  .contacts-nav-link-title {
+    margin-bottom: 8px;
+  }
+  .contacts-menu {
+    gap: 73px;
   }
 
 
 }
 
 @media screen and (min-width: 1280px) {
-  .contacts-container {
-    padding-inline: 85px;
-    width: 1280px;
-    
+
+  .contacts {
+    padding-bottom: 73px;
+
   }
 
   .contacts-wrap {
     flex-direction: row;
     gap: 140px;
   }
+  .contacts-logo {
+    margin-bottom: 16px;
+  }
+  .contacts-text {
+    margin-bottom: 40px;
+  }
 
   .contacts-address-wrap {
-    display: none;
+    margin-right: 51px;
   }
 
-  .room-hero-container {
-    padding-inline: 85px;
-    padding-top: 377px;
-    max-width: 1280px;
-    position: relative;
+  .map-wrap {
+    width: 634px;
+    height: 412px;
+    background-image: url(/images/contacts/map-desc.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .map-wrap {
+      background-image: url(/images/contacts/map-desc-x2.jpg);
+    }
   }
 
-  .room-hero-btn-wrap {
-    position: absolute;
-    right: 85px;
-    bottom: 66px;
-  }
-
-  .room-hero-btn {
-    min-width: 232px;
-    padding-inline: 31px;
+  .map-link {
+    width: 634px;
+    height: 412px;
   }
 }
