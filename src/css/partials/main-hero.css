@@ -71,6 +71,12 @@ body {
   font-size: 16px;
   line-height: calc(20/16);
   text-transform: capitalize;
+  transition: 
+    color var(--transit);
+}
+.header-main-nav-link-title:hover,
+.header-main-nav-link-title:focus {
+  color: var(--social-icon-color);
 }
 
 .header-main-tel {
@@ -128,6 +134,12 @@ body {
 
 .header-main-soc-icon {
   fill: var(--social-icon-color);
+  transition: 
+    fill var(--transit);
+}
+.header-main-soc-icon:hover,
+.header-main-soc-icon:focus {
+  fill: var(--accent-color)
 }
 /* ---------------------------- MAIN HERO ---------------------------- */
 .main-hero-container {
