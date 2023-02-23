@@ -250,10 +250,7 @@
    .kitchen-slider {
       height: 358px;
    }
-
-   .kitchen-swiper {
-      top: 0;
-      width: 548px;
-      right: 0;
+   .kitchen-slide {
+      width: 254px;
    }
 }
