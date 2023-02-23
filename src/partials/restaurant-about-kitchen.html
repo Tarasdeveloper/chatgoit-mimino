@@ -33,11 +33,58 @@
       <div class="kitchen-slider">
          <ul class="kitchen-slider-wrapper">
             <li class="kitchen-slide">
-               <img src="./images/kitchen/slider-dt-img-1.jpg" alt="img-1">
+                <picture>
+                  <source
+                  srcset="
+                  ./images/kitchen/slider-dt-img-1.jpg   1x,
+                  ./images/kitchen/slider-dt-img-1.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  />
+                  <source
+                  srcset="
+                  ./images/kitchen/slider-dt-img-1.jpg   1x,
+                  ./images/kitchen/slider-dt-img-1.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  />
+                  <source
+                  srcset="
+                  ./images/kitchen/slider-dt-img-1.jpg,
+                  ./images/kitchen/slider-dt-img-1.jpg,
+                  "
+                  media="(min-width: 320px)"
+                  />
+                  <img src="./images/kitchen/slider-dt-img-1.jpg" alt="img-1">
+                  >
+               </picture>
             </li>
    
             <li class="kitchen-slide">
-               <img src="./images/kitchen/slider-dt-img-2.jpg" alt="img-2">
+               <picture>
+                  <source
+                  srcset="
+                  ./images/kitchen/slider-dt-img-2.jpg   1x,
+                  ./images/kitchen/slider-dt-img-2.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  />
+                  <source
+                  srcset="
+                  ./images/kitchen/slider-dt-img-2.jpg   1x,
+                  ./images/kitchen/slider-dt-img-2.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  />
+                  <source
+                  srcset="
+                  ./images/kitchen/slider-mob-img-0.5x2.jpg,
+                  ./images/kitchen/slider-mob-img-0.5x2.jpg,
+                  "
+                  media="(min-width: 320px)"
+                  />
+                  <img src="./images/kitchen/slider-dt-img-2.jpg" alt="img-2">
+               </picture>
             </li>
          </ul>
 
