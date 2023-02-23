@@ -139,7 +139,7 @@ body {
   position: absolute;
   display: flex;
   gap: 7px;
-  left: 15px;
+  left: -25px;
   top: 630px;
   flex-direction: column;
 }
@@ -149,6 +149,8 @@ body {
 }
 
 .room-hero-container {
+  position: relative;
+
   text-align: center;
   padding-inline: 15px;
   padding-top: 341px;
@@ -213,6 +215,38 @@ body {
 .room-hero-btn:focus {
   background: var(--white-color);
   border: 2px solid var(--accent-color);
+}
+
+.room-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.room-arrow-icon {
+  fill: var(--accent-color);
+
+  transition: fill var(--transit);
+}
+
+.room-arrow-icon:hover,
+.room-arrow-icon:focus {
+  fill: var(--white-color);
+}
+
+.room-arrow.left-arrow {
+  position: absolute;
+  top: 35%;
+  left: 15px;
+}
+
+.room-arrow.right-arrow {
+  position: absolute;
+  top: 35%;
+  right: 15px;
 }
 
 @media screen and (min-width: 414px) {
@@ -346,6 +380,14 @@ body {
 
     justify-content: flex-end;
   }
+
+  .room-arrow.left-arrow {
+    left: 47px;
+  }
+
+  .room-arrow.right-arrow {
+    right: 47px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -400,5 +442,13 @@ body {
   .room-hero-btn {
     min-width: 232px;
     padding-inline: 31px;
+  }
+
+  .room-arrow.left-arrow {
+    left: 85px;
+  }
+
+  .room-arrow.right-arrow {
+    right: 85px;
   }
 }

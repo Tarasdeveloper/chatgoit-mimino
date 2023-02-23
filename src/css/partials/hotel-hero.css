@@ -70,6 +70,12 @@ body {
     font-size: 16px;
     line-height: calc(20/16);
     text-transform: capitalize;
+    transition: 
+        color var(--transit);
+}
+.header-hotel-nav-link-title:hover,
+.header-hotel-nav-link-title:focus {
+    color: var(--social-icon-color);
 }
 
 .header-hotel-tel {
@@ -105,6 +111,7 @@ body {
     line-height: calc(15/12);
     letter-spacing: 0.01em;
     color:  var(--address-color);
+    
 }
 
 .header-hotel-address-link {
@@ -127,6 +134,12 @@ body {
 
 .header-hotel-soc-icon {
     fill: var(--social-icon-color);
+    transition: 
+        fill var(--transit);
+}
+.header-hotel-soc-icon:hover,
+.header-hotel-soc-icon:focus {
+    fill: var(--accent-color)
 }
 /* ---------------------------- HOTEL HERO ---------------------------- */
 .hotel-hero-container {

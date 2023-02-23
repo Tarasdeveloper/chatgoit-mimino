@@ -13,7 +13,7 @@ body {
 
 .contacts {
   position: relative;
-  height: 599px;
+  min-height: 599px;
   padding-bottom: 16px;
   background-color: #fffdee;
   background-repeat: no-repeat;
@@ -35,17 +35,17 @@ body {
   width: 127px;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 12px;
-}
+  margin-bottom: 12px;}
+
 
 .contacts-text {
   font-family: 'Montserrat';
+  margin-bottom: 24px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-
   color: #7a7a7a;
   text-align: left;
 }
@@ -53,34 +53,48 @@ body {
 .contacts-wrap {
   display: flex;
   flex-direction: column;
-
+  align-items: flex-end;
   flex-wrap: wrap;
+}
+
+.contacts-nav-cont{
+  align-items: flex-end;
 }
 
 .contacts-nav {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   justify-content: flex-end;
 }
 
 .contacts-menu {
-  gap: 20px;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 .contacts-item {
   display: flex;
-  align-items: center;
+
+  align-items:center;
+  
   height: 24px;
+  
 }
 
 .contacts-nav-link-title {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  font-size: 16px;
-  line-height: calc(20 / 16);
+  font-size: 20px;
+  line-height: calc(24 / 20);
   text-transform: capitalize;
+  min-width: 102px;
+  margin-right: 22px;
+  text-align: left;
 }
+
 
 .contacts-tel {
   display: flex;
@@ -92,11 +106,13 @@ body {
   border-radius: 2px;
   padding-left: 8px;
   padding-right: 8px;
+
 }
 
 .contacts-tel-icon {
   fill: var(--accent-color);
   overflow: visible;
+  margin-right: 8px;
 }
 
 .contacts-tel-numb-one {
@@ -107,26 +123,30 @@ body {
   letter-spacing: 0.017em;
   color: #494848;
   margin-right: 12px;
+
 }
 .contacts-tel-numb {
-  display: none;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.017em;
   color: #494848;
+
 }
 
 .contacts-address-wrap {
-  width: 210px;
-  padding-inline: 6px;
-  padding-block: 7px;
+  width: 260px;
+  padding-right: 33px;
+  padding-left: 10px;
+  padding-top: 8px;
   border: 1px solid var(--social-icon-color);
   border-radius: 2px;
+
   background-color: #ffffff;
   font-weight: 400;
-  font-size: 12px;
-  line-height: calc(15 / 12);
+  font-size: 16px;
+  line-height: calc(20 / 16);
   letter-spacing: 0.01em;
   color: #494848;
   text-align: left;
@@ -143,6 +163,7 @@ body {
 
 .contacts-address-icon {
   fill: var(--accent-color);
+  margin-right: 10px;
 }
 
 .contacts-soc-list {
@@ -158,6 +179,7 @@ body {
   fill: var(--social-icon-color);
 }
 .map-wrap {
+
   border: 1px solid #bababa;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -165,6 +187,7 @@ body {
   height: 220px;
   background-image: url(/images/contacts/map-mob.jpg);
   background-repeat: no-repeat;
+
   background-position: center;
   background-size: cover;
 }
@@ -239,19 +262,57 @@ body {
   .contacts-item {
     flex-direction: column;
     align-items: flex-start;
+
+
+
+
+@media screen and (min-width: 414px) {
+ 
+   @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .map-wrap {
+    
+    background-image: url(/images/contacts/map-mob-x2.jpg);
+  }
+  }
+  .contacts-container {
+    padding-inline: 15px;
+      flex-wrap: wrap;
+    align-items: flex-start;
   }
 
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts-container {
+  
+    max-width: 1024px;
+   
+  }
+  .map-wrap {
+   
+width: 535px;
+height: 412px;}
+.contacts {
+  
+  min-height: 521px;}
   .contacts-nav-link-title {
     margin-bottom: 8px;
   }
   .contacts-menu {
     gap: 73px;
   }
+
+
 }
 
 @media screen and (min-width: 1280px) {
+
   .contacts {
     padding-bottom: 73px;
+
   }
 
   .contacts-wrap {
