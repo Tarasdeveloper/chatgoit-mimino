@@ -1,350 +1,199 @@
-body {
-  margin: 0;
-}
-
-.list {
-  list-style: none;
-  display: flex;
-}
-
-.link {
-  text-decoration: none;
-}
-
 .contacts {
-  position: relative;
-  min-height: 599px;
-  padding-bottom: 16px;
-  background-color: #fffdee;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   padding-top: 36px;
   padding-bottom: 32px;
 }
 
-.contacts-logo {
+.contact-logo {
   font-family: 'FilmP3', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.3em;
-  color: #494848;
-  text-align: center;
   font-size: 40px;
-  line-height: calc(43 / 40);
-  height: 43px;
-  width: 127px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 12px;}
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: var(--title-color);
 
-
-.contacts-text {
-  font-family: 'Montserrat';
-  margin-bottom: 24px;
-
+  margin-bottom: 12px;
+}
+.contact-text {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #7a7a7a;
-  text-align: left;
+  color: var(--text-color);
+
+  margin-bottom: 16px;
 }
 
-.contacts-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
-
-.contacts-nav-cont{
-  align-items: flex-end;
-}
-
-.contacts-nav {
-  display: flex;
-  margin-bottom: 24px;
-  justify-content: flex-end;
-}
-
-.contacts-menu {
-  gap: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-}
-
-.contacts-item {
-  display: flex;
-
-  align-items:center;
-  
-  height: 24px;
-  
-}
-
-.contacts-nav-link-title {
+.text-contact {
   font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
   font-size: 20px;
-  line-height: calc(24 / 20);
-  text-transform: capitalize;
-  min-width: 102px;
-  margin-right: 22px;
-  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brown-color);
 }
 
+.contact-rest {
+  margin-bottom: 16px;
+}
 
-.contacts-tel {
+.contact-hotel {
+  margin-bottom: 16px;
+}
+
+.contact-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+
+  transition: color var(--transit);
+}
+
+.contact-link:hover, .contact-link:focus {
+  color: var(--brown-color)
+}
+
+.contact-link.first-tel {
+  margin-right: 12px;
+}
+
+.contact-item {
   display: flex;
   align-items: center;
-  min-width: 144px;
-  min-height: 40px;
-  background-color: #ffffff;
-  border: 0.5px solid #f3c653;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #ffffff;
+  border: 0.5px solid var(--accent-color);
   border-radius: 2px;
   padding-left: 8px;
-  padding-right: 8px;
+}
 
+.contact-wrapper.first {
+  width: 144px;
+  height: 40px;
+  margin-left: 22px;
+}
+
+.contact-wrapper.second {
+  width: 260px;
+  height: 40px;
+  margin-left: 54px;
+}
+
+.contact-wrapper.map {
+  width: 260px;
+  height: 76px;
+  padding-left: 10px;
+  margin-left: 124px;
 }
 
 .contacts-tel-icon {
-  fill: var(--accent-color);
-  overflow: visible;
   margin-right: 8px;
-}
-
-.contacts-tel-numb-one {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  letter-spacing: 0.017em;
-  color: #494848;
-  margin-right: 12px;
-
-}
-.contacts-tel-numb {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  letter-spacing: 0.017em;
-  color: #494848;
-
-}
-
-.contacts-address-wrap {
-  width: 260px;
-  padding-right: 33px;
-  padding-left: 10px;
-  padding-top: 8px;
-  border: 1px solid var(--social-icon-color);
-  border-radius: 2px;
-
-  background-color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.01em;
-  color: #494848;
-  text-align: left;
-  margin-bottom: 32px;
-  margin-left: 124px;
-  height: 76px;
-}
-
-.contacts-address-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  fill: var(--brown-color);
 }
 
 .contacts-address-icon {
-  fill: var(--accent-color);
   margin-right: 10px;
+  fill: var(--brown-color);
 }
 
-.contacts-soc-list {
-  position: absolute;
-  display: flex;
-  gap: 7px;
-  left: 15px;
-  top: 630px;
-  flex-direction: column;
+.contact-map {
+  margin-bottom: 39px;
 }
 
-.contacts-soc-icon {
-  fill: var(--social-icon-color);
-}
-.map-wrap {
-
-  border: 1px solid #bababa;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+.contact-img img {
+  border: 1px solid var(--grey-color);
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  width: 384px;
-  height: 220px;
-  background-image: url(/images/contacts/map-mob.jpg);
-  background-repeat: no-repeat;
-
-  background-position: center;
-  background-size: cover;
-}
-.map-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 414px) {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .map-wrap {
-      background-image: url(/images/contacts/map-mob-x2.jpg);
-    }
+  .contacts > .container {
+    width: 414px;
+  }
+
+  .contact-wrapper {
+    flex-wrap: nowrap;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .map-wrap {
-    width: 535px;
-    height: 412px;
-    background-image: url(/images/contacts/map-tab.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .map-wrap {
-      background-image: url(/images/contacts/map-tab-x2.jpg);
-    }
-  }
+  .contacts > .container {
+    width: 960px;
 
-  .map-link {
-    width: 535px;
-    height: 412px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .contacts {
     padding-top: 56px;
-    padding-bottom: 44px;
+    padding-bottom: 40px;
   }
 
-  .room-hero-btn-wrap {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-  }
-  .contacts-logo {
+  .contact-logo {
     font-size: 64px;
-    line-height: calc(69 / 64);
-    width: 202px;
-    height: 69px;
     margin-bottom: 8px;
   }
-  .contacts-text {
+
+  .contact-text {
     margin-bottom: 52px;
   }
-  .contacts-address-wrap {
-    margin-top: 97px;
-    margin-bottom: 0;
-    margin-right: 110px;
+
+  .text-contact {
+    margin-bottom: 8px;
+  }
+
+  .contact-item {
+    display: block;
+  }
+
+  .contact-rest {
+    margin-bottom: 24px;
+  }
+
+  .contact-hotel {
+    margin-bottom: 48px;
+  }
+
+  .contact-map {
+    margin-bottom: 0px;
+  }
+
+  .contact-wrapper.first {
+    margin-left: 0px;
+  }
+
+  .contact-wrapper.second {
+    margin-left: 0px;
+  }
+
+  .contact-wrapper.map {
     margin-left: 0px;
     width: 285px;
     height: 56px;
-    padding-right: 12px;
-    padding-left: 10px;
   }
-
-  .contacts-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-
-@media screen and (min-width: 414px) {
- 
-   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .map-wrap {
-    
-    background-image: url(/images/contacts/map-mob-x2.jpg);
-  }
-  }
-  .contacts-container {
-    padding-inline: 15px;
-      flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  
-}
-
-@media screen and (min-width: 1024px) {
-  .contacts-container {
-  
-    max-width: 1024px;
-   
-  }
-  .map-wrap {
-   
-width: 535px;
-height: 412px;}
-.contacts {
-  
-  min-height: 521px;}
-  .contacts-nav-link-title {
-    margin-bottom: 8px;
-  }
-  .contacts-menu {
-    gap: 73px;
-  }
-
-
 }
 
 @media screen and (min-width: 1280px) {
+  .contacts > .container {
+    width: 1140px;
+  }
 
   .contacts {
     padding-bottom: 73px;
-
   }
 
-  .contacts-wrap {
-    flex-direction: row;
-    gap: 140px;
-  }
-  .contacts-logo {
+  .contact-logo {
     margin-bottom: 16px;
   }
-  .contacts-text {
+
+  .contact-text {
     margin-bottom: 40px;
   }
-
-  .contacts-address-wrap {
-    margin-right: 51px;
-  }
-
-  .map-wrap {
-    width: 634px;
-    height: 412px;
-    background-image: url(/images/contacts/map-desc.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .map-wrap {
-      background-image: url(/images/contacts/map-desc-x2.jpg);
-    }
-  }
-
-  .map-link {
-    width: 634px;
-    height: 412px;
-  }
 }
+
