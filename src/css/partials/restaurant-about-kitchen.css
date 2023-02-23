@@ -253,5 +253,8 @@
    }
    .kitchen-slide {
       width: 254px;
+   } 
+   .kitchen-button-arrows {
+      bottom: 36px;
    }
 }
