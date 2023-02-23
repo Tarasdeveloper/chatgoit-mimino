@@ -428,5 +428,6 @@ body {
     .rest-hero-btn {
         min-width: 258px;
         padding-inline: 31px;
+        scroll-behavior: smooth;
     }
 }
