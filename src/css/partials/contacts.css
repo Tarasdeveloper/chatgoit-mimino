@@ -19,25 +19,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 36px 15px 32px 15px;
-}
-
-.contacts-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  gap: 12px;
-  text-align: center;
-  padding-inline: 15px;
-  margin: 0 auto;
-  max-width: 414px;
+  padding-top: 36px;
+  padding-bottom: 32px;
 }
 
 .contacts-logo {
@@ -52,6 +35,7 @@ body {
   width: 127px;
   text-transform: uppercase;
   display: block;
+  margin-bottom: 12px;
 }
 
 .contacts-text {
@@ -59,18 +43,18 @@ body {
 
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-
+  line-height: 1.25;
   letter-spacing: 0.02em;
 
   color: #7a7a7a;
+  text-align: left;
 }
 
 .contacts-wrap {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
+  flex-wrap: wrap;
 }
 
 .contacts-nav {
@@ -86,7 +70,6 @@ body {
 .contacts-item {
   display: flex;
   align-items: center;
-  gap: 6px;
   height: 24px;
 }
 
@@ -102,8 +85,13 @@ body {
 .contacts-tel {
   display: flex;
   align-items: center;
-  width: 20px;
-  height: 24px;
+  min-width: 144px;
+  min-height: 40px;
+  background-color: #ffffff;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .contacts-tel-icon {
@@ -111,13 +99,22 @@ body {
   overflow: visible;
 }
 
+.contacts-tel-numb-one {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.017em;
+  color: #494848;
+  margin-right: 12px;
+}
 .contacts-tel-numb {
   display: none;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(17 / 14);
-  letter-spacing: 0.02em;
-  color: var(--white-color);
+  letter-spacing: 0.017em;
+  color: #494848;
 }
 
 .contacts-address-wrap {
@@ -126,12 +123,16 @@ body {
   padding-block: 7px;
   border: 1px solid var(--social-icon-color);
   border-radius: 2px;
-
+  background-color: #ffffff;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.01em;
-  color: var(--address-color);
+  color: #494848;
+  text-align: left;
+  margin-bottom: 32px;
+  margin-left: 124px;
+  height: 76px;
 }
 
 .contacts-address-link {
@@ -156,140 +157,133 @@ body {
 .contacts-soc-icon {
   fill: var(--social-icon-color);
 }
+.map-wrap {
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  width: 384px;
+  height: 220px;
+  background-image: url(/images/contacts/map-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.map-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 @media screen and (min-width: 414px) {
-  .contacts-container {
-    padding-inline: 15px;
-    width: 414px;
-    flex-wrap: wrap;
-
-    align-items: flex-start;
-  }
-
-  .contacts-tel {
-    width: 24px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .map-wrap {
+      background-image: url(/images/contacts/map-mob-x2.jpg);
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .map-wrap {
+    width: 535px;
+    height: 412px;
+    background-image: url(/images/contacts/map-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .map-wrap {
+      background-image: url(/images/contacts/map-tab-x2.jpg);
+    }
+  }
+
+  .map-link {
+    width: 535px;
+    height: 412px;
+  }
+
   .contacts {
-    padding-bottom: 30px;
-    height: 720px;
-  }
-
-  .contacts-container {
-    padding-inline: 47px;
-    padding-top: 25px;
-    width: 1024px;
-    height: 40px;
-    align-items: center;
-  }
-
-  .contacts-logo {
-    font-size: 40px;
-    line-height: calc(43 / 40);
-    width: 127px;
-    height: 43px;
-  }
-
-  .contacts-menu {
-    gap: 72px;
-  }
-
-  .contacts-item {
-    gap: 32px;
-  }
-
-  .contacts-nav {
-    margin-bottom: 0px;
-  }
-
-  .contacts-nav-link-title {
-    font-size: 20px;
-    line-height: calc(24 / 20);
-  }
-
-  .contacts-tel {
-    padding: 7px;
-    gap: 4px;
-    border: 1px solid var(--social-icon-color);
-    border-radius: 2px;
-    width: auto;
-    height: auto;
-  }
-
-  .contacts-tel-numb {
-    display: contents;
-  }
-
-  .contacts-address-wrap {
-    width: auto;
-    padding: 8px;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.01em;
-    position: absolute;
-    top: 640px;
-    left: 47px;
-  }
-
-  .contacts-address-link {
-    gap: 10px;
-  }
-
-  .room-hero-container {
-    padding-inline: 47px;
-    padding-top: 353px;
-    max-width: 1024px;
-  }
-
-  .room-hero-pretitle {
-    margin-bottom: 24px;
-    max-width: 507px;
-    font-size: 35px;
-  }
-  .room-text {
-    font-size: 16px;
-    max-width: 400px;
+    padding-top: 56px;
+    padding-bottom: 44px;
   }
 
   .room-hero-btn-wrap {
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  .contacts-logo {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    width: 202px;
+    height: 69px;
+    margin-bottom: 8px;
+  }
+  .contacts-text {
+    margin-bottom: 52px;
+  }
+  .contacts-address-wrap {
+    margin-top: 97px;
+    margin-bottom: 0;
+    margin-right: 110px;
+    margin-left: 0px;
+    width: 285px;
+    height: 56px;
+    padding-right: 12px;
+    padding-left: 10px;
+  }
 
-    justify-content: flex-end;
+  .contacts-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts-nav-link-title {
+    margin-bottom: 8px;
+  }
+  .contacts-menu {
+    gap: 73px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .contacts-container {
-    padding-inline: 85px;
-    width: 1280px;
+  .contacts {
+    padding-bottom: 73px;
   }
 
   .contacts-wrap {
     flex-direction: row;
     gap: 140px;
   }
+  .contacts-logo {
+    margin-bottom: 16px;
+  }
+  .contacts-text {
+    margin-bottom: 40px;
+  }
 
   .contacts-address-wrap {
-    display: none;
+    margin-right: 51px;
   }
 
-  .room-hero-container {
-    padding-inline: 85px;
-    padding-top: 377px;
-    max-width: 1280px;
-    position: relative;
+  .map-wrap {
+    width: 634px;
+    height: 412px;
+    background-image: url(/images/contacts/map-desc.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .map-wrap {
+      background-image: url(/images/contacts/map-desc-x2.jpg);
+    }
   }
 
-  .room-hero-btn-wrap {
-    position: absolute;
-    right: 85px;
-    bottom: 66px;
-  }
-
-  .room-hero-btn {
-    min-width: 232px;
-    padding-inline: 31px;
+  .map-link {
+    width: 634px;
+    height: 412px;
   }
 }

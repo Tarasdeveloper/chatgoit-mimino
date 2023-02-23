@@ -224,6 +224,10 @@ body {
     }
   }
 
+  .header-room-soc-list {
+    left: 15px;
+  }
+
   .header-room-container {
     padding-inline: 15px;
     width: 414px;
