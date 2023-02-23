@@ -2,6 +2,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: var(--bg-darklemon-color);
+    
 
    
  }
@@ -21,6 +22,8 @@
    padding-right: 15px;
    margin-left: auto;
    margin-right: auto;
+
+   
   
  }
 
@@ -159,7 +162,7 @@ background-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .hotel_button:hover, .hotel_button:focus {
-  color: var(--white-color);
+  background-color: var(--white-color);
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25)
 }
 
@@ -173,17 +176,24 @@ background-color 250ms cubic-bezier(0.4,0,0.2,1);
 
 /* -------MEDIA--------------- */
 
+@media screen and (min-width: 414px){
+  .triple-room-container{
+  max-width: 514px;
+}
+}
+
 @media screen and (min-width:1024px){
   .triple-room-section {
      padding-top: 62px;
      padding-bottom: 40px;
-
+     
   }
 
   .triple-room-container{
    position: relative;
    padding-left: 47px;
    padding-right: 47px;
+   max-width: 977px;
   
  }
 
@@ -254,7 +264,7 @@ background-color 250ms cubic-bezier(0.4,0,0.2,1);
 @media screen and (min-width: 1280px){
  .triple-room-section {
    padding-top: 72px;
-   
+ 
 
 }
 
@@ -264,6 +274,7 @@ background-color 250ms cubic-bezier(0.4,0,0.2,1);
 
  padding-left: 85px;
  padding-right: 85px;
+ max-width: 1280px;
 
 }
 
@@ -298,7 +309,7 @@ background-color 250ms cubic-bezier(0.4,0,0.2,1);
 .triple-picture-wrap.section-picture-img{
 
  top: -110px;
- left: 180px;
+ left: 155px;
  margin-bottom: 48px;
 }
 
