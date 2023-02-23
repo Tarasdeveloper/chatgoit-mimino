@@ -101,6 +101,16 @@
    right: 0;
 }
 
+.sviper-arrow-left,
+.sviper-arrow-right {
+   transition: fill var(--transit);
+}
+
+.sviper-arrow-left:hover, 
+.sviper-arrow-right:hover {
+   fill: var(--accent-color);
+}
+
 @media (min-width: 414px) {
    .kitchen > .container {
       max-width: 514px;
@@ -134,7 +144,7 @@
    }
 
    .kitchen {
-      padding: 0 0 273px;
+      padding: 0 0 377px;
    }
 
    .kitchen-pretitle {
@@ -188,14 +198,15 @@
 
    .kitchen-slider-wrapper {
       right: 0;
+      gap: 40px;
    }
 
    .kitchen-slider {
       position: absolute;
       right: 0;
-      bottom: -32%;
-      height: 326px;
-      width: 548px;
+      bottom: -45%;
+      height: 290px;
+      width: 428px;
    }
 
    .kitchen-slide {
@@ -204,7 +215,7 @@
 
    .kitchen-button-arrows {
       padding-right: 0;
-      bottom: 0;
+      bottom: 29px;
       right: 0;
       z-index: 10;
    }
@@ -212,7 +223,7 @@
 
 @media (min-width: 1280px) {
    .kitchen {
-      padding: 0 0 273px;
+      padding: 0 0 345px;
    }
 
    .kitchen > .container {
@@ -250,11 +261,12 @@
 
    .kitchen-slider {
       height: 358px;
+      bottom: -39%;
    }
    .kitchen-slide {
       width: 254px;
    } 
    .kitchen-button-arrows {
-      bottom: 36px;
+      bottom: 29px;
    }
 }
