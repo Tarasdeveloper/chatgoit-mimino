@@ -144,6 +144,12 @@ body {
   flex-direction: column;
 }
 
+.header-room-soc-item {
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
+
 .header-room-soc-icon {
   fill: var(--social-icon-color);
 }
