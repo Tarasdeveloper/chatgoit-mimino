@@ -75,14 +75,13 @@
    display: flex;
    gap: 24px;
    position: absolute;
-   overflow: hidden;
-   /* left: 69px; */
+   right: -15px;
 }
 
 .kitchen-slide {
    background-color: var(--bg-img-color);
    border-radius: 2px;
-   width: 245px;
+   height: 245px;
    object-fit: cover;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
