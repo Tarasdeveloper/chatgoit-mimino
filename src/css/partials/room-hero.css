@@ -139,7 +139,7 @@ body {
   position: absolute;
   display: flex;
   gap: 7px;
-  left: 15px;
+  left: -25px;
   top: 630px;
   flex-direction: column;
 }
@@ -223,6 +223,10 @@ body {
       background-image: url(/images/hotel-hero/room-mob@2x.webp);
     }
   }
+
+  .header-room-soc-list {
+  
+    left: 15px;}
 
   .header-room-container {
     padding-inline: 15px;
