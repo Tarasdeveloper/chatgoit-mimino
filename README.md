@@ -1,4 +1,4 @@
 # Vanilla App Template
 
-Made with: html, css, javascript, vite
+Made by team with: html, css, javascript, vite, trello
 
